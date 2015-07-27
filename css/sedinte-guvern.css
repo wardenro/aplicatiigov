@@ -1,0 +1,25 @@
+ /* CSS pentru pagina sedinte-guvern.html */
+ .main-sedinte h1 {
+ 	width: 90%;
+ 	margin: 0 auto;
+ 	text-align: center;
+ }
+
+ .container-sedinte h2 {
+	width: 90%;
+	margin: 20px auto 0;
+	padding: 5px 10px;
+	text-align: left;
+	background-color: #009900 ;
+	color: white;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+ }
+
+ .container-sedinte__item div {
+ 	width: 90%;
+ 	margin: 10px auto 20px;
+ 	padding: 10px 0;
+ 	border-bottom: 1px solid #d3d3d3;
+ }
