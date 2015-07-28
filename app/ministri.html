@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Title</title>
+
+	
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	
+	<script>
+myurl = 'http://gov.ro/ro/json-ministri';
+$.ajax({
+  dataType: "jsonp",
+  url: myurl,
+  jsonpCallback: 'callback',
+  type: 'GET',
+  }).done(function ( data ) {
+   $('#nume').html( data.rez[0].nume )
+   $('#prenume').html( data.rez[0].prenume )
+   
+   $('#continut').html( data.rez[0].continut )
+   $('#descriere').html( data.rez[0].descriere )
+   $('#images').html( '<img class="resize" src="' + data.rez[0].image + '"/>' )
+   $('#functie').html( data.rez[0].functie )
+  });
+</script>
+
+<style>
+img.resize{
+   width:100px;
+   
+}
+#functie {
+			position: relative;
+			left: 110px;
+			bottom: 100px;
+}
+#prenume {
+			position: relative;
+			left: 55px;
+			top: 20px;
+}
+</style>
+
+</head>
+<body>
+
+<div data-role="page">
+
+	<div data-role="header">
+		<h1>Ministri</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<div data-role="collapsible">
+		  <h1>
+			<div id="prenume"></div>  
+			<div id="nume"></div>  
+			<div id="images"></div>
+			<div id="functie"></div>
+		  
+		  </h1>
+		  
+		  <p><div id="continut"></div></p>
+		  <p><div id="descriere"></div></p>
+		  <p><div id="functie"></div></p>
+		</div>
+	</div>
+		
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4></h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+</body>
+</html>

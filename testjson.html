@@ -2,13 +2,12 @@
 <head>
   <meta charset="utf-8">
   <title>jQuery.getJSON demo</title>
-  <style>
-  img {
-    height: 100px;
-    float: left;
-  }
-  </style>
-  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <script>
 myurl = 'http://gov.ro/ro/json-ministri';
 $.ajax({
@@ -17,14 +16,40 @@ $.ajax({
   jsonpCallback: 'callback',
   type: 'GET',
   }).done(function ( data ) {
-   $('#images').html('<img src="' + data.rez[0].image + '"/>')
+   $('#nume').html( data.rez[1].nume )
+   $('#prenume').html( data.rez[1].prenume )
+   
+   $('#continut').html( data.rez[1].continut )
+   $('#descriere').html( data.rez[1].descriere )
+   $('#images').html( '<img src="' + data.rez[1].image + '"/>' )
+   $('#functie').html( data.rez[1].functie )
   });
 </script>
 </head>
 <body>
  
-<div id="images"></div>
+ <div data-role="page">
  
  
+ <div data-role="header" data-position="fixed">
+ 
+ </div><!-- /header -->
+ 
+ <div role="main" class="ui-content">
+<p><div id="nume"></div></p>
+
+<p><div id="prenume"></div></p>
+
+<p><div id="continut"></div></p>
+
+<p><div id="descriere"></div></p>
+
+<p><div id="images"></div></p>
+
+<p><div id="functie"></div></p>
+</div><!-- /content -->
+
+ </div><!-- /page -->
 </body>
 </html>
+
