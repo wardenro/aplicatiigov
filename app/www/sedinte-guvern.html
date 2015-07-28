@@ -41,7 +41,7 @@
 		   	// vezi daca exista container pentru obiect in functie de data publicarii
 		   	if ($('.'+date).length > 0) {
 		   		// daca da, adauga la finalul containerului
-		   		content = '<div data-role="collapsible"><h3>' + item.titlu +'</h3><p>'+ item.continut + '</p></div>'
+		   		content = '<div class="container-sedinte__item__container" data-role="collapsible"><h3>' + item.titlu +'</h3><p>'+ item.continut + '</p></div>'
 				$('.'+date).append(content);
 				$('.container-sedinte').collapsibleset('refresh')
 		   	} else {
