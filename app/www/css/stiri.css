@@ -20,7 +20,6 @@
  	padding: 5px 0;
  }
 
-
  .container-stiri__item__container__content a {
  	margin-bottom: 10px;
  	text-decoration: none; 
@@ -28,6 +27,11 @@
     clear: both;
  }
 
+
+.ui-collapsible-inset.ui-collapsible-themed-content .ui-collapsible-content {
+ 	margin-top: -5px !important;
+ 	margin-bottom: 5px !important;
+ }
  .container-stiri__item__container__content img {
  	width: 100%;
  	max-width: 364px;

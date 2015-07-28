@@ -28,7 +28,6 @@
 		  url: myurl,
 		  type: 'GET',
 		  }).done(function ( data ) {
-		  	console.log(data);
 		   $.each(data.rez, function(i, item){
 		   	var date = new Date(item.data_publicarii)
 		   	var formattedDate = date.getDate() + '-' + date.getMonth() + '-' + date.getFullYear();
