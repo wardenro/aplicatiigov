@@ -2,18 +2,18 @@
     	var pageNo = 0;
 		getContent(pageNo);
 		// Verifica daca marimea ferestrei este mai mare decat continutul(daca se poate face scroll)
-		if ($("body").height() > $(window).height()) {
-			getNext();
+		if ($("body").height() < $(window).height()) {
+			getNext(pageNo);
 		}
 		$(window).scroll(function() {
 	   		if($(window).scrollTop() + $(window).height() == $(document).height()) {
-	   			getNext();
+	   			getNext(pageNo);
 			}
 		})
     })
 	
 
-    function getNext() {
+    function getNext(pageNo) {
 		pageNo++;
 		getContent(pageNo);
     }
