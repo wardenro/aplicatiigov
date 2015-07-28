@@ -34,12 +34,20 @@
 		   	// vezi daca exista container pentru obiect in functie de data publicarii
 		   	if ($('.'+formattedDate).length > 0) {
 		   		// daca da, adauga la finalul containerului
-		   		content = '<div class="container-sedinte__item__container" data-role="collapsible"><h3>' + item.titlu +'</h3><p><a href="'+ item.url +'">Vezi ședința pe site</a>'+ item.continut + '</p></div>'
+		   		content = '<div class="container-sedinte__item__container" data-role="collapsible"><h3>' 
+		   		+ item.titlu +'</h3><p><a href="http://gov.ro/ro/guvernul/sedinte-guvern/'+ 
+		   		item.url +'" target="_blank">Vezi ședința pe site</a>'+ 
+		   		item.continut + '</p></div>'
 				$('.'+formattedDate).append(content).html();
 				$('.container-sedinte').collapsibleset('refresh')
 		   	} else {
 			   	// daca nu, creaza un nou container cu data publicarii ca si clasa
-			   	content = '<div class="container-sedinte__item ' + formattedDate + '"><h2> Ședința din ' + formattedDate + '</h2><div class="container-sedinte__item__container" data-role="collapsible"> <h3>' + item.titlu +'</h3><p><a href="'+ item.url +'">Vezi ședința pe site</a>'+ item.continut +'</p> </div></div>'
+			   	content = '<div class="container-sedinte__item ' 
+			   	+ formattedDate + '"><h2> Ședința din ' + 
+			   	formattedDate + '</h2><div class="container-sedinte__item__container" data-role="collapsible"> <h3>' + 
+			   	item.titlu +'</h3><p><a href="http://gov.ro/ro/guvernul/sedinte-guvern/'+ 
+			   	item.url +'" target="_blank">Vezi ședința pe site</a>'+ 
+			   	item.continut +'</p> </div></div>'
 			   	$('.container-sedinte').append(content).html();
 				$('.container-sedinte').collapsibleset('refresh')
 
