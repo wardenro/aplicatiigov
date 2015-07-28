@@ -24,3 +24,10 @@
  	margin-top: -5px !important;
  	margin-bottom: 5px !important;
  }
+
+ .container-sedinte__item__container div p a {
+ 	margin-bottom: 10px;
+ 	text-decoration: none; 
+    float: left;
+    width: 100%;
+ }
