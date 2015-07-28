@@ -41,10 +41,14 @@
 		   	// vezi daca exista container pentru obiect in functie de data publicarii
 		   	if ($('.'+date).length > 0) {
 		   		// daca da, adauga la finalul containerului
-				$('.'+date).append('<div>' + item.titlu +'</div>')
+		   		content = '<div data-role="collapsible"><h3>' + item.titlu +'</h3><p>'+ item.continut + '</p></div>'
+				$('.'+date).append(content);
+				$('.container-sedinte').collapsibleset('refresh')
 		   	} else {
 			   	// daca nu, creaza un nou container cu data publicarii ca si clasa
-			   	$('.container-sedinte').append('<div class="container-sedinte__item ' + date + '"><h2> Ședința din ' + date + '</h2><div>' + item.titlu +' </div></div>')
+			   	content = '<div class="container-sedinte__item ' + date + '"><h2> Ședința din ' + date + '</h2><div data-role="collapsible"> <h3>' + item.titlu +'</h3><p>'+ item.continut +'</p> </div></div>'
+			   	$('.container-sedinte').append(content);
+				$('.container-sedinte').collapsibleset('refresh')
 
 			}
 			})
@@ -59,14 +63,10 @@
 	<div data-role="header" data-position="fixed">
 		<h1>Guvernul Romaniei</h1>
 		<a href="#meniu" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>
-        <a href="#search" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a>
 	</div><!-- /header -->
-
 	<div role="main" class="ui-content main-sedinte">
 		<h1>Ședințe de Guvern</h1>
-		<div class="container-sedinte">
-			<div class="container-sedinte__item">
-			</div>	
+		<div class="container-sedinte" data-role="collapsible-set">
 		</div>
 	</div><!-- /content -->
 

@@ -24,6 +24,6 @@
  	border-bottom: 1px solid #d3d3d3;
  }
 
- .container-sedinte__item div:last-child {
+ .container-sedinte__item p:last-child {
  	border-bottom: 0;
  }
