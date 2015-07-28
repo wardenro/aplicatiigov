@@ -26,10 +26,8 @@
 		$.ajax({
 		  dataType: "jsonp",
 		  url: myurl,
-		  jsonpCallback: 'callback',
 		  type: 'GET',
 		  }).done(function ( data ) {
-		  	console.log(data);
 		   $.each(data.rez, function(i, item){
 		   	var date = new Date(item.data_publicarii)
 		   	var formattedDate = date.getDate() + '-' + date.getMonth() + '-' + date.getFullYear();
@@ -37,12 +35,12 @@
 		   	if ($('.'+formattedDate).length > 0) {
 		   		// daca da, adauga la finalul containerului
 		   		content = '<div class="container-sedinte__item__container" data-role="collapsible"><h3>' + item.titlu +'</h3><p><a href="'+ item.url +'">Vezi ședința pe site</a>'+ item.continut + '</p></div>'
-				$('.'+formattedDate).append(content);
+				$('.'+formattedDate).append(content).html();
 				$('.container-sedinte').collapsibleset('refresh')
 		   	} else {
 			   	// daca nu, creaza un nou container cu data publicarii ca si clasa
 			   	content = '<div class="container-sedinte__item ' + formattedDate + '"><h2> Ședința din ' + formattedDate + '</h2><div class="container-sedinte__item__container" data-role="collapsible"> <h3>' + item.titlu +'</h3><p><a href="'+ item.url +'">Vezi ședința pe site</a>'+ item.continut +'</p> </div></div>'
-			   	$('.container-sedinte').append(content);
+			   	$('.container-sedinte').append(content).html();
 				$('.container-sedinte').collapsibleset('refresh')
 
 			}
