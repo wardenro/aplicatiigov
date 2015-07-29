@@ -29,36 +29,41 @@
 		  type: 'GET',
 		  }).done(function ( data ) {
 		   $.each(data.rez, function(i, item){
-		   	var date = new Date(item.data_publicarii)
-		   	var formattedDate = date.getDate() + '-' + date.getMonth() + '-' + date.getFullYear();
+		   	var date = new Date(item.data_publicarii);
+		   	var dateString = date.getDate() + date.getMonth() + date.getFullYear()
+		   	var formattedDate = date.getDate() + ' ' + month(date.getMonth()) + ' ' + date.getFullYear();
 		   	// vezi daca exista container pentru obiect in functie de data publicarii
-		   	if ($('.'+formattedDate).length > 0) {
+		   	if ($('.'+dateString).length > 0) {
 		   		// daca da, adauga la finalul containerului
-		   		content = '<div class="container-stiri__item__container" data-role="collapsible"><h3>' 
-		   		+ decodeEntities(item.titlu) +'</h3><div class="container-stiri__item__container__content"><div class="image_wrapper"><img src="'+ 
-		   		item.imagine +'" /></div><a href="http://gov.ro/ro/stiri/'+ 
-		   		item.url +'" target="_blank">Vezi știre pe site</a><p>'+ 
-		   		decodeEntities(item.continut.replace(/\n/g,'<br />').replace(/\t/g,'&nbsp;&nbsp;&nbsp;')) + '</p></div></div>'
-				$('.'+formattedDate).append(content).html();
+				$('.'+dateString).append(contentStiri(item, date)).html();
 				$('.container-stiri').collapsibleset('refresh')
 		   	} else {
 			   	// daca nu, creaza un nou container cu data publicarii ca si clasa
 			   	content = '<div class="container-stiri__item ' + 
-			   	formattedDate + '"><h2> Ședința din ' + 
-			   	formattedDate + '</h2><div class="container-stiri__item__container" data-role="collapsible"> <h3>' + 
-			   	decodeEntities(item.titlu) +'</h3><div class="container-stiri__item__container__content"><div class="image_wrapper"><img src="'+ 
-			   	item.imagine +'" /></div><a href="http://gov.ro/ro/stiri/'+ 
-			   	item.url +'" target="_blank">Vezi știre pe site</a><p>'+ 
-			   	decodeEntities(item.continut.replace(/\n/g,'<br />').replace(/\t/g,'&nbsp;&nbsp;&nbsp;')) +'</p></div> </div></div>'
+			   	dateString + '"><h2> Ședința din ' + 
+			   	formattedDate + '</h2>' + contentStiri(item, date) + '</div>'
 			   	$('.container-stiri').append(content).html();
 				$('.container-stiri').collapsibleset('refresh')
 
 			}
 			})
 		  });
+	}	
+	function contentStiri(item, date){
+		content = '<div class="container-stiri__item__container" data-role="collapsible"><h3>' + image(item.imagine) + 
+			   	decodeEntities(item.titlu) +'<div class="container-stiri__item__container__data">' + date.getHours() + ':' + (date.getMinutes()<10?'0':'') + date.getMinutes() + '</div></h3><div class="container-stiri__item__container__content"><a href="http://gov.ro/ro/stiri/'+ 
+			   	item.url +'" target="_blank">Vezi știre pe site</a><p>'+ 
+			   	decodeEntities(item.continut.replace(/\n/g,'<br />').replace(/\t/g,'&nbsp;&nbsp;&nbsp;'))
+			   	 +'</p></div> </div>'
+	   	return content
 	}
-	function decodeEntities(input) {
-  		var y = document.createElement('textarea');
-  		y.innerHTML = input;
- 		return y.value;		
-	}		
+
+	function image(imagine){
+		if (imagine.length > 0 && imagine != 'http://gov.ro/fisiere/') {
+			content = '<div class="image_wrapper"><img src="'+ 
+				   	imagine +'" /></div>'
+		   	return content
+	   	} else {
+	   		return ''
+	   	}
+	}

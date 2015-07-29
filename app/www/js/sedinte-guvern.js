@@ -50,7 +50,6 @@
 			   	decodeEntities(item.continut.replace(/\n/g,'<br />').replace(/\t/g,'&nbsp;&nbsp;&nbsp;'))+'</p> </div></div>'
 			   	$('.container-sedinte').append(content).text();
 				$('.container-sedinte').collapsibleset('refresh')
-
 			}
 			})
 

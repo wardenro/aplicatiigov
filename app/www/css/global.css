@@ -1,13 +1,22 @@
 body {
 	margin: 0;
 	padding: 0;
+	font-family: sans-serif;
 }
 
-.loader {
-	width: 40px;
-	margin: 0 auto;
+.loader {    
+	background-color: #EAEEF4;
+    text-align: center;
 }
 
 .loader img {
 	width: 40px;
+}
+
+a, a:focus, a:active {
+	outline: none !important;
+}
+
+.ui-icon-plus:after, .ui-icon-minus:after {
+	display: none;
 }
