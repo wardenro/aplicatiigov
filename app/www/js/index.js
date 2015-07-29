@@ -35,10 +35,10 @@
 		   	if ($('.'+formattedDate).length > 0) {
 		   		// daca da, adauga la finalul containerului
 		   		content = '<div class="container-stiri__item__container" data-role="collapsible"><h3>' 
-		   		+ decodeEntities(item.titlu) +'</h3><div class="container-stiri__item__container__content"><div class="image_wrapper"><img src="'+ 
+		   		+ item.titlu +'</h3><div class="container-stiri__item__container__content"><div class="image_wrapper"><img src="'+ 
 		   		item.imagine +'" /></div><a href="http://gov.ro/ro/stiri/'+ 
 		   		item.url +'" target="_blank">Vezi știre pe site</a><p>'+ 
-		   		decodeEntities(item.continut.replace(/\n/g,'<br />').replace(/\t/g,'&nbsp;&nbsp;&nbsp;')) + '</p></div></div>'
+		   		item.continut + '</p></div></div>'
 				$('.'+formattedDate).append(content).html();
 				$('.container-stiri').collapsibleset('refresh')
 		   	} else {
@@ -46,10 +46,10 @@
 			   	content = '<div class="container-stiri__item ' + 
 			   	formattedDate + '"><h2> Ședința din ' + 
 			   	formattedDate + '</h2><div class="container-stiri__item__container" data-role="collapsible"> <h3>' + 
-			   	decodeEntities(item.titlu) +'</h3><div class="container-stiri__item__container__content"><div class="image_wrapper"><img src="'+ 
+			   	item.titlu +'</h3><div class="container-stiri__item__container__content"><div class="image_wrapper"><img src="'+ 
 			   	item.imagine +'" /></div><a href="http://gov.ro/ro/stiri/'+ 
 			   	item.url +'" target="_blank">Vezi știre pe site</a><p>'+ 
-			   	decodeEntities(item.continut.replace(/\n/g,'<br />').replace(/\t/g,'&nbsp;&nbsp;&nbsp;')) +'</p></div> </div></div>'
+			   	item.continut +'</p></div> </div></div>'
 			   	$('.container-stiri').append(content).html();
 				$('.container-stiri').collapsibleset('refresh')
 
@@ -57,8 +57,3 @@
 			})
 		  });
 	}
-	function decodeEntities(input) {
-  		var y = document.createElement('textarea');
-  		y.innerHTML = input;
- 		return y.value;		
-	}		

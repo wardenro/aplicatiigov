@@ -35,9 +35,9 @@
 		   	if ($('.'+formattedDate).length > 0) {
 		   		// daca da, adauga la finalul containerului
 		   		content = '<div class="container-sedinte__item__container" data-role="collapsible"><h3>' 
-		   		+ item.titlu +'</h3><p><a href="http://gov.ro/ro/guvernul/sedinte-guvern/'+ 
+		   		+ decodeEntities(item.titlu) +'</h3><p><a href="http://gov.ro/ro/guvernul/sedinte-guvern/'+ 
 		   		item.url +'" target="_blank">Vezi ședința pe site</a>'+ 
-		   		item.continut + '</p></div>'
+		   		decodeEntities(item.continut.replace(/\n/g,'<br />').replace(/\t/g,'&nbsp;&nbsp;&nbsp;')) + '</p></div>'
 				$('.'+formattedDate).append(content).html();
 				$('.container-sedinte').collapsibleset('refresh')
 		   	} else {
@@ -45,13 +45,21 @@
 			   	content = '<div class="container-sedinte__item ' 
 			   	+ formattedDate + '"><h2> Ședința din ' + 
 			   	formattedDate + '</h2><div class="container-sedinte__item__container" data-role="collapsible"> <h3>' + 
-			   	item.titlu +'</h3><p><a href="http://gov.ro/ro/guvernul/sedinte-guvern/'+ 
+			   	decodeEntities(item.titlu) +'</h3><p><a href="http://gov.ro/ro/guvernul/sedinte-guvern/'+ 
 			   	item.url +'" target="_blank">Vezi ședința pe site</a>'+ 
-			   	item.continut +'</p> </div></div>'
-			   	$('.container-sedinte').append(content).html();
+			   	decodeEntities(item.continut.replace(/\n/g,'<br />').replace(/\t/g,'&nbsp;&nbsp;&nbsp;'))+'</p> </div></div>'
+			   	$('.container-sedinte').append(content).text();
 				$('.container-sedinte').collapsibleset('refresh')
 
 			}
 			})
+
+
 		  });
-	}
+
+	}    			
+	function decodeEntities(input) {
+  		var y = document.createElement('textarea');
+  		y.innerHTML = input;
+ 		return y.value;		
+	}		
