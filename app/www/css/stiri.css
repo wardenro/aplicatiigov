@@ -42,6 +42,7 @@
  .container-stiri__item__container__content {
  	font-size: 1.2em;
  	margin-top: 20px;
+ 	line-height: 150%;
  }
 
  .container-stiri__item__container__data {
