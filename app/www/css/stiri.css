@@ -8,8 +8,8 @@
 	margin: 20px auto 5px;
 	padding: 5px 10px;
 	text-align: left;
-	background-color: #009900 ;
-	color: white;
+	color: #666666;
+	font-size: 1.3em;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -32,7 +32,7 @@
  	margin-top: -5px !important;
  	margin-bottom: 5px !important;
  }
- .container-stiri__item__container__content img {
+ .image_wrapper img {
  	width: 100%;
  	max-width: 364px;
  	margin: 5px auto;
