@@ -35,13 +35,13 @@
 		   	// vezi daca exista container pentru obiect in functie de data publicarii
 		   	if ($('.'+dateString).length > 0) {
 		   		// daca da, adauga la finalul containerului
-				$('.'+dateString).append(contentStiri(item)).html();
+				$('.'+dateString).append(contentStiri(item, date)).html();
 				$('.container-stiri').collapsibleset('refresh')
 		   	} else {
 			   	// daca nu, creaza un nou container cu data publicarii ca si clasa
 			   	content = '<div class="container-stiri__item ' + 
 			   	dateString + '"><h2> Ședința din ' + 
-			   	formattedDate + '</h2>' + contentStiri(item) + '</div>'
+			   	formattedDate + '</h2>' + contentStiri(item, date) + '</div>'
 			   	$('.container-stiri').append(content).html();
 				$('.container-stiri').collapsibleset('refresh')
 
@@ -49,11 +49,12 @@
 			})
 		  });
 	}	
-	function contentStiri(item){
+	function contentStiri(item, date){
 		content = '<div class="container-stiri__item__container" data-role="collapsible"><h3>' + image(item.imagine) + 
-			   	decodeEntities(item.titlu) +'</h3><div class="container-stiri__item__container__content"><a href="http://gov.ro/ro/stiri/'+ 
+			   	decodeEntities(item.titlu) +'<div class="container-stiri__item__container__data">' + date.getHours() + ':' + (date.getMinutes()<10?'0':'') + date.getMinutes() + '</div></h3><div class="container-stiri__item__container__content"><a href="http://gov.ro/ro/stiri/'+ 
 			   	item.url +'" target="_blank">Vezi știre pe site</a><p>'+ 
-			   	decodeEntities(item.continut.replace(/\n/g,'<br />').replace(/\t/g,'&nbsp;&nbsp;&nbsp;')) +'</p></div> </div>'
+			   	decodeEntities(item.continut.replace(/\n/g,'<br />').replace(/\t/g,'&nbsp;&nbsp;&nbsp;'))
+			   	 +'</p></div> </div>'
 	   	return content
 	}
 
@@ -62,5 +63,7 @@
 			content = '<div class="image_wrapper"><img src="'+ 
 				   	imagine +'" /></div>'
 		   	return content
+	   	} else {
+	   		return ''
 	   	}
 	}

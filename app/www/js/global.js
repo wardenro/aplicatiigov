@@ -32,6 +32,6 @@ function month(i){
 
 function decodeEntities(input) {
 	var y = document.createElement('textarea');
-	y.innerHTML = input;
+	y.innerHTML = $.trim(input);
 	return y.value;		
 }	
