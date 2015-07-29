@@ -9,7 +9,8 @@
 	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 	
-	<script>
+<script>
+
 myurl = 'http://gov.ro/ro/json-ministri';
 $.ajax({
   dataType: "jsonp",
@@ -17,63 +18,70 @@ $.ajax({
   jsonpCallback: 'callback',
   type: 'GET',
   }).done(function ( data ) {
-   $('#nume').html( data.rez[0].nume )
-   $('#prenume').html( data.rez[0].prenume )
-   
-   $('#continut').html( data.rez[0].continut )
-   $('#descriere').html( data.rez[0].descriere )
-   $('#images').html( '<img class="resize" src="' + data.rez[0].image + '"/>' )
-   $('#functie').html( data.rez[0].functie )
+  	console.log(data);
+   $.each(data.rez, function(i, item){
+
+   content = '<div data-role="collapsible"><h3 >' + '<div class="nume">' + item.prenume + ' ' + item.nume + "</div>" + '<img class="resize" src="' + item.image + '"/>'  + '<div class="functie">' + item.functie + '</div></h3>' + '<p><div class="descriere">' + item.descriere.replace(/\n/g,'<br />') + '</div></p> </div>' 
+   console.log(item.nume);
+   console.log(item.prenume);
+   console.log(item.continut);
+   $('.container-ministri').append(content)
+
+   $('.container-ministri').collapsibleset('refresh')
+
+   })
   });
+
 </script>
 
 <style>
 img.resize{
-   width:100px;
+	position: relative;
+	top: 5px;
+   width:150px;
    
 }
-#functie {
-			position: relative;
-			left: 110px;
-			bottom: 100px;
+.functie {
+    position: absolute;
+    bottom: 130px;
+    left: 210px;
+    
 }
-#prenume {
-			position: relative;
-			left: 55px;
-			top: 20px;
-}
+.nume{position: relative;
+			
+			top:2px;
+			
+		}
 </style>
 
 </head>
 <body>
-
 <div data-role="page">
 
-	<div data-role="header">
+	<div data-role="header" data-position="fixed">
 		<h1>Ministri</h1>
+		<a href="#meniu" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>
 	</div><!-- /header -->
 
-	<div role="main" class="ui-content">
-		<div data-role="collapsible">
-		  <h1>
-			<div id="prenume"></div>  
-			<div id="nume"></div>  
-			<div id="images"></div>
-			<div id="functie"></div>
-		  
-		  </h1>
-		  
-		  <p><div id="continut"></div></p>
-		  <p><div id="descriere"></div></p>
-		  <p><div id="functie"></div></p>
-		</div>
-	</div>
-		
+	<div role="main" class="ui-content main-ministri">
+		<div class="container-ministri" data-role="collapsible-set"></div>
 	</div><!-- /content -->
 
-	<div data-role="footer">
-		<h4></h4>
+	<div data-role="footer" data-position="fixed">
+		
 	</div><!-- /footer -->
+
+
+	<div data-role="panel" id="meniu" data-theme="b" data-display="overlay" >
+		<a href="" class="ui-btn">Agenda</a>
+		<a href="ministri.html" data-ajax="false" class="ui-btn">Cabinet Ministri</a>
+		<a href="sedinte-guvern.html" data-ajax="false" class="ui-btn">Sedinte Guvern</a>
+		<a href="stiri.html" data-ajax="false" class="ui-btn">Stiri</a>
+		<a href="termeni si conditii.html" data-ajax="false" class="ui-btn">Termeni si conditii
+		            </a>
+		<a href="Despre.html" data-ajax="false" class="ui-btn">Despre</a>
+	</div><!-- /panel -->
+	
 </div><!-- /page -->
 
 </body>

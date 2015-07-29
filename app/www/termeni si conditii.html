@@ -1,13 +1,26 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="utf-8">
-  <title>Termeni și condiții</title>
+	<title>Guvernul Romaniei</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
 </head>
- 
-  
 <body>
-  
-  <h2><center><font size="2.5"> TERMENI ŞI CONDIŢII DE UTILIZARE </font></center> </h2>
+
+<div data-role="page">
+
+	<div data-role="header" data-position="fixed">
+		<h1>Guvernul Romaniei</h1>
+		<a href="#meniu" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>
+        <a href="#search" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		 <h2><center><font size="2.5"> TERMENI ŞI CONDIŢII DE UTILIZARE </font></center> </h2>
   <h3> <center><font size="2.5"> A APLICAŢIEI „GOV.RO” </font></center></h3>
   
   <p> Prezentul document stabileşte termenii şi condiţiile de utilizare
@@ -287,19 +300,28 @@ respectiv denumirea societăţii, în cazul persoanelor juridice, adresa,
 	datele de localizare şi alte date conexe necesare pentru identificarea
 	unui utilizator final.</p>
 	<p>6.2.2. GUVERNUL ROMANIEI va prelucra si reţine aceste date în condiţiile legislaţiei în vigoare.</p>
-	
-	
-	
+	</div><!-- /content -->
 
+	<div data-role="footer" data-position="fixed">
+		
+	</div><!-- /footer -->
+	
+	<div data-role="panel" id="meniu" data-theme="b" data-display="overlay" >
+		<a href="" class="ui-btn">Agenda</a>
+		<a href="ministri.html" data-ajax="false" class="ui-btn">Cabinet Ministri</a>
+		<a href="sedinte-guvern.html" data-ajax="false" class="ui-btn">Sedinte Guvern</a>
+		<a href="stiri.html" data-ajax="false" class="ui-btn">Stiri</a>
+		<a href="termeni si conditii.html" data-ajax="false" class="ui-btn">Termeni si conditii
+		            </a>
+		<a href="Despre.html" data-ajax="false" class="ui-btn">Despre</a>
+	</div><!-- /panel -->
+	
+	<div data-role="panel" id="search" data-theme="b" data-display="overlay" data-position="right">
+		<form class="ui-filterable">
+    <input id="autocomplete-input" data-type="search" placeholder="Cautare">
+</form>
+</div>
+</div><!-- /page -->
 
- 
-	
-	
-	
-  
 </body>
-  
-  
-  
-  
- </html>
+</html>
