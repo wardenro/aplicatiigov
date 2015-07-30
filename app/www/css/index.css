@@ -1,30 +1,55 @@
  /* CSS pentru pagina index.html */
- .main-stiri h1 {
+ .main-agenda h1 {
  	margin: 0 auto;
  	text-align: center;
+ 	color: #2f598c;
+ 	font-size: 1.5em;
  }
 
- .container-stiri h2 {
-	margin: 20px auto 5px;
+ .main-agenda {
+ 	background-color: #EAEEF4;
+ }
+
+ .container-agenda h2 {
+	margin: 30px auto 10px;
 	padding: 5px 10px;
 	text-align: left;
-	background-color: #009900 ;
-	color: white;
+	font-size: 1.2em;
+ 	color: #2f598c;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
  }
 
-
- .container-stiri__item__container h3{
+.container-agenda__item__container {
+	box-shadow: 1px 1px 2px #888888;
+    background-color: #ffffff;
+    margin-bottom: 20px !important;	
+}
+ .container-agenda__item__container h3{
  	padding: 5px 0;
  }
 
- .container-stiri__item__container__content a {
+ .container-agenda__item__container__content a {
  	margin-bottom: 10px;
  	text-decoration: none; 
     width: 100%;
+    font-size: 1em;
     clear: both;
+ 	color: #2f598c;
+ 	cursor: pointer;
+ 	float: left;
+ }
+ .container-agenda__item__container__content {
+ 	font-size: 1.2em;
+ 	margin-top: 20px;
+ 	line-height: 150%;
+ }
+
+ .container-agenda__item__container__data {
+ 	margin-top: 10px;
+ 	color: #666666;
+ 	font-size: 0.85em;
  }
 
 
@@ -32,12 +57,16 @@
  	margin-top: -5px !important;
  	margin-bottom: 5px !important;
  }
- .container-stiri__item__container__content img {
- 	width: 100%;
- 	max-width: 364px;
- 	margin: 5px auto;
+ .ui-collapsible-heading-toggle {
+ 	background-color: #ffffff !important;
+ 	border: 0 !important;
+ 	text-overflow: initial;
+    overflow: auto;
+    white-space: normal;
+    font-weight: 500 !important;
+    line-height: 150%;
+    font-size: 1.2em;
  }
-
- .image_wrapper {
- 	text-align: center;
+ .ui-collapsible-heading-toggle {
+ 	padding: 10px 15px !important;
  }
