@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="css/global.css" />
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<script src="js/jquery.mobile-1.4.5.min.js"></script>
 </head>
@@ -14,9 +15,8 @@
 <div data-role="page">
 
 	<div data-role="header" data-position="fixed">
-		<h1>Guvernul Romaniei</h1>
+		<h1 class="header__title">Guvernul Romaniei</h1>
 		<a href="#meniu" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>
-        <a href="#search" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a>
 	</div><!-- /header -->
 
 	<div role="main" class="ui-content">
@@ -307,11 +307,11 @@ respectiv denumirea societăţii, în cazul persoanelor juridice, adresa,
 	</div><!-- /footer -->
 	
 	<div data-role="panel" id="meniu" data-theme="b" data-display="overlay" >
-		<a href="index.html" data-ajax="false"  class="ui-btn">Agenda</a>
-		<a href="ministri.html" data-ajax="false" class="ui-btn">Cabinet Ministri</a>
+		<a href="" class="ui-btn">Agenda</a>
+		<a href="ministri.html" data-ajax="false"  class="ui-btn">Cabinet Ministri</a>
 		<a href="sedinte-guvern.html" data-ajax="false" class="ui-btn">Sedinte Guvern</a>
-		<a href="stiri.html" data-ajax="false" class="ui-btn">Stiri</a>
-		<a href="termeni si conditii.html" data-ajax="false" class="ui-btn">Termeni si conditii
+		<a href="stiri.html" class="ui-btn">Stiri</a>
+		<a href="termeni si conditii.html"  class="ui-btn">Termeni si conditii
 		            </a>
 		<a href="Despre.html" data-ajax="false" class="ui-btn">Despre</a>
 	</div><!-- /panel -->
