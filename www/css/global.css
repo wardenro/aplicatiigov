@@ -21,12 +21,6 @@ a, a:focus, a:active {
 	display: none;
 }
 
-.ui-collapsible-heading-toggle {
-	text-overflow: initial;
-  	overflow: auto;
-  	white-space: normal;
- }
-
 .ui-page .ui-header {
     background: #000099;
 }
@@ -42,6 +36,15 @@ a, a:focus, a:active {
 	background-color: #3333AD !important;
 	border-color: #00007A !important;
 }
+
+.ui-collapsible-heading-toggle {
+	text-overflow: initial;
+  	overflow: auto;
+  	white-space: normal;
+  	background-color: #ffffff !important;
+  	border: 0 !important;
+  	color: #333 !important;
+ }
 
  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
     .image_wrapper {
