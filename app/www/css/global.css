@@ -20,3 +20,17 @@ a, a:focus, a:active {
 .ui-icon-plus:after, .ui-icon-minus:after {
 	display: none;
 }
+
+.ui-collapsible-heading-toggle {
+	text-overflow: initial;
+  	overflow: auto;
+  	white-space: normal;
+ }
+
+.ui-page .ui-header {
+    background: #000099;
+}
+
+.header__title {
+	color:white;font-weight:lighter;text-shadow: 2px 2px #000099;
+}

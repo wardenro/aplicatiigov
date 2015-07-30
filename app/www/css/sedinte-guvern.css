@@ -2,7 +2,7 @@
  .main-sedinte h1 {
  	margin: 0 auto;
  	text-align: center;
- 	color: #2f598c;
+ 	color: #000099;
  	font-size: 1.5em;
  }
 
@@ -15,7 +15,7 @@
 	padding: 5px 10px;
 	text-align: left;
 	font-size: 1.2em;
- 	color: #2f598c;
+ 	color: #000099;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;

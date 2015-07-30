@@ -26,9 +26,7 @@ $.ajax({
    $.each(data.rez, function(i, item){
 
    content = '<div data-role="collapsible"><h3 >' + '<div class="nume">' + item.prenume + ' ' + item.nume + "</div>" + '<img class="resize" src="' + item.image + '"/>'  + '<div class="functie">' + item.functie + '</div></h3>' + '<p><div class="descriere">' + item.descriere.replace(/\n/g,'<br />') + '</div></p> </div>' 
-   console.log(item.nume);
-   console.log(item.prenume);
-   console.log(item.continut);
+ 
    $('.container-ministri').append(content)
 
    $('.container-ministri').collapsibleset('refresh')
@@ -38,13 +36,12 @@ $.ajax({
 
 </script>
 
-
 </head>
 <body>
 <div data-role="page">
 
 	<div data-role="header" data-position="fixed">
-		<h1>Ministri</h1>
+		<h3 class="header__title">Ministri</h3>
 		<a href="#meniu" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>
 	</div><!-- /header -->
 
@@ -58,13 +55,12 @@ $.ajax({
 
 
 	<div data-role="panel" id="meniu" data-theme="b" data-display="overlay" >
-		<a href="index.html" data-ajax="false"  class="ui-btn">Agenda</a>
-		<a href="ministri.html" data-ajax="false" class="ui-btn">Cabinet Ministri</a>
-		<a href="sedinte-guvern.html" data-ajax="false" class="ui-btn">Sedinte Guvern</a>
-		<a href="stiri.html" data-ajax="false" class="ui-btn">Stiri</a>
-		<a href="termeni si conditii.html" data-ajax="false" class="ui-btn">Termeni si conditii
-		            </a>
-		<a href="Despre.html" data-ajax="false" class="ui-btn">Despre</a>
+		<a href="index.html" data-ajax="false" class="ui-btn ui-corner-all ">Agenda</a>
+		<a href="ministri.html" data-ajax="false"  class="ui-btn ui-corner-all">Cabinet Ministri</a>
+		<a href="sedinte-guvern.html" data-ajax="false" class="ui-btn ui-corner-all">Sedinte Guvern</a>
+		<a href="stiri.html" class="ui-btn ui-corner-all">Stiri</a>
+		<a href="termeni si conditii.html"  class="ui-btn ui-corner-all">Termeni si conditii</a>
+		<a href="Despre.html" data-ajax="false" class="ui-btn ui-corner-all">Despre</a>
 	</div><!-- /panel -->
 	
 </div><!-- /page -->
