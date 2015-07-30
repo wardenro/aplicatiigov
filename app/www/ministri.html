@@ -5,9 +5,13 @@
 
 	
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="css/global.css" />
+	<link rel="stylesheet" href="css/ministri.css" />
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+	<script src="js/global.js"></script>
 	
 <script>
 
@@ -34,25 +38,6 @@ $.ajax({
 
 </script>
 
-<style>
-img.resize{
-	position: relative;
-	top: 5px;
-   width:150px;
-   
-}
-.functie {
-    position: absolute;
-    bottom: 130px;
-    left: 210px;
-    
-}
-.nume{position: relative;
-			
-			top:2px;
-			
-		}
-</style>
 
 </head>
 <body>
@@ -73,7 +58,7 @@ img.resize{
 
 
 	<div data-role="panel" id="meniu" data-theme="b" data-display="overlay" >
-		<a href="" class="ui-btn">Agenda</a>
+		<a href="index.html" data-ajax="false"  class="ui-btn">Agenda</a>
 		<a href="ministri.html" data-ajax="false" class="ui-btn">Cabinet Ministri</a>
 		<a href="sedinte-guvern.html" data-ajax="false" class="ui-btn">Sedinte Guvern</a>
 		<a href="stiri.html" data-ajax="false" class="ui-btn">Stiri</a>

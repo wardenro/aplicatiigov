@@ -1,0 +1,19 @@
+img.resize{
+   width:50%;
+   float: left;
+   
+}
+.functie {
+    width: 50%;
+    float: left;
+    
+}
+.ui-collapsible-heading-toggle {
+	text-overflow: initial;
+  overflow: auto;
+  white-space: normal;
+}
+.nume{
+  position: relative;
+  top:2px;	
+} 

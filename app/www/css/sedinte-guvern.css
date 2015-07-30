@@ -53,10 +53,6 @@
  }
 
 
-.ui-collapsible-inset.ui-collapsible-themed-content .ui-collapsible-content {
- 	margin-top: -5px !important;
- 	margin-bottom: 5px !important;
- }
  .ui-collapsible-heading-toggle {
  	background-color: #ffffff !important;
  	border: 0 !important;
