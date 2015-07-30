@@ -21,6 +21,11 @@
 	box-sizing: border-box;
  }
 
+  .container-stiri:first-child h2 {
+    margin-top: 0;
+    padding-top: 0;
+ }
+
 .container-stiri__item__container {
 	box-shadow: 1px 1px 2px #888888;
     background-color: #ffffff;
