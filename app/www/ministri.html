@@ -6,6 +6,7 @@
 	
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="css/global.css" />
 	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 	
@@ -22,9 +23,7 @@ $.ajax({
    $.each(data.rez, function(i, item){
 
    content = '<div data-role="collapsible"><h3 >' + '<div class="nume">' + item.prenume + ' ' + item.nume + "</div>" + '<img class="resize" src="' + item.image + '"/>'  + '<div class="functie">' + item.functie + '</div></h3>' + '<p><div class="descriere">' + item.descriere.replace(/\n/g,'<br />') + '</div></p> </div>' 
-   console.log(item.nume);
-   console.log(item.prenume);
-   console.log(item.continut);
+ 
    $('.container-ministri').append(content)
 
    $('.container-ministri').collapsibleset('refresh')
@@ -38,20 +37,32 @@ $.ajax({
 img.resize{
 	position: relative;
 	top: 5px;
-   width:150px;
-   
+   width:120px; 
+   right: 30px;
 }
 .functie {
     position: absolute;
-    bottom: 130px;
-    left: 210px;
-    
+    bottom: 100px;
+    left: 150px;
+    width:50% ;
+}
+
+.ui-page .ui-header {
+    background: #000099;
 }
 .nume{position: relative;
-			
+			right: 29.5px;
 			top:2px;
-			
+			border:2px solid ;
+			border-color: #000099;
+			background-color: #000099;
+			color:white;
+			border-radius: 5px;
+			font-weight: lighter;
+			text-shadow: 2px 2px #000099;
+			/*border-right-width:100px ;*/
 		}
+
 </style>
 
 </head>
@@ -59,7 +70,7 @@ img.resize{
 <div data-role="page">
 
 	<div data-role="header" data-position="fixed">
-		<h1>Ministri</h1>
+		<h3 style="color:white;font-weight:lighter;text-shadow: 2px 2px #000099;">Ministri</h3>
 		<a href="#meniu" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>
 	</div><!-- /header -->
 
@@ -73,13 +84,13 @@ img.resize{
 
 
 	<div data-role="panel" id="meniu" data-theme="b" data-display="overlay" >
-		<a href="" class="ui-btn">Agenda</a>
-		<a href="ministri.html" data-ajax="false" class="ui-btn">Cabinet Ministri</a>
-		<a href="sedinte-guvern.html" data-ajax="false" class="ui-btn">Sedinte Guvern</a>
-		<a href="stiri.html" data-ajax="false" class="ui-btn">Stiri</a>
-		<a href="termeni si conditii.html" data-ajax="false" class="ui-btn">Termeni si conditii
+		<a href="" class="ui-btn ui-corner-all ">Agenda</a>
+		<a href="ministri.html" data-ajax="false"  class="ui-btn ui-corner-all">Cabinet Ministri</a>
+		<a href="sedinte-guvern.html" data-ajax="false" class="ui-btn ui-corner-all">Sedinte Guvern</a>
+		<a href="stiri.html" class="ui-btn ui-corner-all">Stiri</a>
+		<a href="termeni si conditii.html"  class="ui-btn ui-corner-all">Termeni si conditii
 		            </a>
-		<a href="Despre.html" data-ajax="false" class="ui-btn">Despre</a>
+		<a href="Despre.html" data-ajax="false" class="ui-btn ui-corner-all">Despre</a>
 	</div><!-- /panel -->
 	
 </div><!-- /page -->
