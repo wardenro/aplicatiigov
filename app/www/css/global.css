@@ -34,6 +34,15 @@ a, a:focus, a:active {
 .header__title {
 	color:white;font-weight:lighter;text-shadow: 2px 2px #000099;
 }
+.ui-panel {
+	background-color: #000099;
+}
+
+.ui-btn{ 
+	background-color: #3333AD !important;
+	border-color: #00007A !important;
+}
+
  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
     .image_wrapper {
         width: 30%;
