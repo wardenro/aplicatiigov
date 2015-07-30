@@ -3,10 +3,12 @@
 		getContent(pageNo);
 		// Verifica daca marimea ferestrei este mai mare decat continutul(daca se poate face scroll)
 		if ($("body").height() < $(window).height()) {
+			pageNo++;
 			getNext(pageNo);
 		}
 		$(window).scroll(function() {
 	   		if($(window).scrollTop() + $(window).height() == $(document).height()) {
+	   			pageNo++;
 	   			getNext(pageNo);
 			}
 		})
@@ -14,7 +16,6 @@
 	
 
     function getNext(pageNo) {
-		pageNo++;
 		getContent(pageNo);
     }
 	function getContent(pageNo){
