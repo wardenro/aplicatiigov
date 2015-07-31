@@ -3,6 +3,9 @@ body {
 	padding: 0;
 	font-family: "Trebuchet MS", sans-serif;
 }
+.ui-content{
+		 background-color: #E6E6F5;
+ }
 
 .loader {    
 	background-color: #EAEEF4;
@@ -34,3 +37,22 @@ a, a:focus, a:active {
 .header__title {
 	color:white;font-weight:lighter;text-shadow: 2px 2px #000099;
 }
+
+.ui-page .ui-header .ui-btn
+{
+	background-image: url("../images/imagine_meniu.png");
+	border-color: #000099;
+	background-color: #000099;
+	width:25px;
+	height:21px;
+	margin-top: -1px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	bottom:15px;
+}
+.ui-btn-icon-left:after
+{
+	display: none;
+}
+
+
