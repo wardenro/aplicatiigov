@@ -1,0 +1,72 @@
+ /* CSS pentru pagina index.html */
+ .main-sedinte h1 {
+ 	margin: 0 auto;
+ 	text-align: center;
+ 	color: #000099;
+ 	font-size: 1.5em;
+ }
+
+ .main-sedinte {
+ 	background-color: #E6E6F5;
+ }
+
+ .container-sedinte h2 {
+	margin: 30px auto 10px;
+	padding: 5px 10px;
+	text-align: left;
+	font-size: 1.2em;
+ 	color: #000099;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+ }
+
+ .container-sedinte:first-child h2 {
+    margin-top: 0;
+    padding-top: 0;
+ }
+.container-sedinte__item__container {
+	box-shadow: 1px 1px 2px #888888;
+    background-color: #ffffff;
+    margin-bottom: 20px !important;	
+}
+ .container-sedinte__item__container h3{
+ 	padding: 5px 0;
+ }
+
+ .container-sedinte__item__container__content a {
+ 	margin-bottom: 10px;
+ 	text-decoration: none; 
+    width: 100%;
+    font-size: 1em;
+    clear: both;
+ 	color: #2f598c;
+ 	cursor: pointer;
+ 	float: left;
+ }
+ .container-sedinte__item__container__content {
+ 	font-size: 1.2em;
+ 	margin-top: 20px;
+ 	line-height: 150%;
+ }
+
+ .container-sedinte__item__container__data {
+ 	margin-top: 10px;
+ 	color: #666666;
+ 	font-size: 0.85em;
+ }
+
+
+ .ui-collapsible-heading-toggle {
+ 	background-color: #ffffff !important;
+ 	border: 0 !important;
+ 	text-overflow: initial;
+    overflow: auto;
+    white-space: normal;
+    font-weight: 500 !important;
+    line-height: 150%;
+    font-size: 1.2em;
+ }
+ .ui-collapsible-heading-toggle {
+ 	padding: 10px 15px !important;
+ }
