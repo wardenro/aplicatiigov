@@ -2,12 +2,12 @@
  .main-sedinte h1 {
  	margin: 0 auto;
  	text-align: center;
- 	color: #000099;
+ 	color: #00488E;
  	font-size: 1.5em;
  }
 
  .main-sedinte {
- 	background-color: #E6E6F5;
+ 	background-color: #E6EDF4;
  }
 
  .container-sedinte h2 {
@@ -15,7 +15,7 @@
 	padding: 5px 10px;
 	text-align: left;
 	font-size: 1.2em;
- 	color: #000099;
+ 	color: #00488E;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;

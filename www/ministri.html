@@ -32,29 +32,7 @@
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<script src="js/jquery.mobile-1.4.5.min.js"></script>
 	<script src="js/global.js"></script>
-	
-<script>
-
-myurl = 'http://gov.ro/ro/json-ministri';
-$.ajax({
-  dataType: "jsonp",
-  url: myurl,
-  jsonpCallback: 'callback',
-  type: 'GET',
-  }).done(function ( data ) {
-  	console.log(data);
-   $.each(data.rez, function(i, item){
-
-   content = '<div data-role="collapsible"><h3 >' + '<div class="nume">' + item.prenume + ' ' + item.nume + "</div>" + '<img class="resize" src="' + item.image + '"/>'  + '<div class="functie">' + item.functie + '</div></h3>' + '<p><div class="descriere">' + item.descriere.replace(/\n/g,'<br />') + '</div></p> </div>' 
- 
-   $('.container-ministri').append(content)
-
-   $('.container-ministri').collapsibleset('refresh')
-
-   })
-  });
-
-</script>
+	<script src="js/ministri.js"></script>
 
 </head>
 <body>
