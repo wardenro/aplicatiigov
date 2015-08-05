@@ -31,7 +31,7 @@
 		  type: 'GET',
 		  }).done(function ( data ) {
 		   $.each(data.rez, function(i, item){
-		  	var date = new Date(item.data_publicarii);
+		   	var date = Date.parse(item.data_publicarii);
 		   	var dateString = date.getDate() + date.getMonth() + date.getFullYear()
 		   	var formattedDate = date.getDate() + ' ' + month(date.getMonth()) + ' ' + date.getFullYear();
 		   	// vezi daca exista container pentru obiect in functie de data publicarii

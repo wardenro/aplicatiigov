@@ -30,9 +30,9 @@
 		  type: 'GET',
 		  }).done(function ( data ) {
 		   $.each(data.rez, function(i, item){
-		   	var date = new Date(item.data_publicarii);
-		   	var dateString = date.getDate().toString() + date.getMonth().toString() + date.getFullYear().toString();
-		   	var formattedDate = date.getDate().toString() + ' ' + month(date.getMonth()) + ' ' + date.getFullYear().toString();
+		   	var date = Date.parse(item.data_publicarii);
+		   	var dateString = date.getDate() + date.getMonth() + date.getFullYear();
+		    var formattedDate = date.getDate() + ' ' + month(date.getMonth()) + ' ' + date.getFullYear().toString();
 		   	// vezi daca exista container pentru obiect in functie de data publicarii
 		   	if ($('.'+dateString).length > 0) {
 		   		// daca da, adauga la finalul containerului
@@ -68,4 +68,8 @@
 	   	} else {
 	   		return ''
 	   	}
+	}
+
+	function supportedFormatDate(date){
+		return date.substring(0, 4) + '-' + date.substring(5, 7) + '-' + date.substring(8, 10) + ' ' + date.substring(11, 19);
 	}
