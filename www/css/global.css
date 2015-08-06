@@ -4,11 +4,11 @@ body {
 	font-family: "Trebuchet MS", sans-serif;
 }
 .ui-content{
-		 background-color: #E6E6F5;
+		 background-color: #E6EDF4;
  }
 
 .loader {    
-	background-color: #E6E6F5;
+	background-color: #E6EDF4;
     text-align: center;
 }
 
@@ -25,24 +25,33 @@ a, a:focus, a:active {
 }
 
 .ui-page .ui-header {
-    background: #000099;
+    background: #00488E;
+}
+.ui-header {
+    padding: 10px 0;
+    line-height: 100%;
 }
 
 .header__title {
-	color:white;font-weight:lighter;text-shadow: 2px 2px #000099;
+	color:white;font-weight:lighter;text-shadow: 2px 2px #00488E;
 }
 
 .ui-page .ui-header .ui-btn
 {
 	background-image: url("../images/imagine_meniu.png");
-	border-color: #000099;
-	background-color: #000099;
+	border: 0;
+	background-color: transparent !important;
 	width:25px;
 	height:21px;
 	margin-top: -1px;
 	background-size: contain;
 	background-repeat: no-repeat;
 	bottom:15px;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;    
+	margin-top: 8px;
+    margin-left: 15px;
 }
 .ui-btn-icon-left:after
 {
@@ -50,12 +59,12 @@ a, a:focus, a:active {
 }
 
 .ui-panel {
-	background-color: #000099;
+	background-color: #00488E;
 }
 
 .ui-btn{ 
-	background-color: #3333AD !important;
-	border-color: #00007A !important;
+	background-color: #004180 !important;
+	border-color: #003A72 !important;
 }
 
 .ui-collapsible-heading-toggle {
