@@ -7,6 +7,9 @@ Guvernul este autoritatea publică a puterii executive, care funcționează în 
 Prim-ministrul conduce Guvernul și coordonează activitatea membrilor acestuia, cu respectarea atribuțiilor legale care le revin. Guvernul adoptă hotărâri şi ordonanţe. Hotărârile se emit pentru organizarea executării legilor. Ordonanţele se emit în temeiul unei legi speciale de abilitare, în limitele şi în condiţiile prevăzute de aceasta. Hotărârile şi ordonanţele adoptate de Guvern se semnează de primul-ministru, se contrasemnează de miniştrii care au obligaţia punerii lor în executare şi se publică în Monitorul Oficial al României.
 Guvernul se întruneşte săptămânal sau ori de câte ori este nevoie, pentru a dezbate problemele politicii interne şi externe sau aspecte de conducere generală a administraţiei publice. În urma dezbaterilor din şedinţa de Guvern sunt adoptate acte normative.
 Informații suplimentare privind activitatea Guvernului sunt disponibile online pe pagina oficială a Guvernului – www.gov.ro.</description>
+  <gap:config-file platform="ios" parent="UIViewControllerBasedStatusBarAppearance" overwrite="true">
+    <false/>
+  </gap:config-file>
   <author href="http://phonegap.com" email="support@phonegap.com">PhoneGap Team</author>
   <content src="index.html"/>
   <preference name="permissions" value="none"/>
