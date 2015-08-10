@@ -11,6 +11,7 @@ Informații suplimentare privind activitatea Guvernului sunt disponibile online 
   <gap:config-file platform="ios" parent="UIViewControllerBasedStatusBarAppearance" overwrite="true">
     <false/>
   </gap:config-file>
+  <plugin name="InAppBrowser" value="CDVInAppBrowser" />
   <author href="http://phonegap.com" email="support@phonegap.com">PhoneGap Team</author>
   <content src="index.html"/>
   <preference name="permissions" value="none"/>
