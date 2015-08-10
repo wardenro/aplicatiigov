@@ -54,8 +54,8 @@
 	}    			
 	function contentSedinte(item, date){
 		content = '<div class="container-sedinte__item__container" data-role="collapsible"><h3>' 
-		   		+ decodeEntities(item.titlu)+'<div class="container-sedinte__item__container__data">' + date.getHours() + ':' + (date.getMinutes()<10?'0':'') + date.getMinutes() + '</div></h3><div class="container-sedinte__item__container__content"><a href="http://gov.ro/ro/guvernul/sedinte-guvern/'+ 
-		   		item.url +'" target="_blank">Vezi ședința pe site</a>'+ 
-		   		decodeEntities(item.continut.trim().replace(/\n/g,'<br />').replace(/\t/g,'&nbsp;&nbsp;&nbsp;')) + '</div></div>'
+		   		+ decodeEntities(item.titlu)+'<div class="container-sedinte__item__container__data">' + date.getHours() + ':' + (date.getMinutes()<10?'0':'') + date.getMinutes() + '</div></h3><div class="container-sedinte__item__container__content"><a href="#" onclick="window.open(\'http://gov.ro/ro/guvernul/sedinte-guvern/'+ 
+			   	item.url + '\', \'_system\');">Vezi ședința pe site</a><p>'+ 
+		   		decodeEntities(item.continut.trim().replace(/\n/g,'<br />').replace(/\t/g,'&nbsp;&nbsp;&nbsp;')) + '</p></div></div>'
 	   	return content
 	}

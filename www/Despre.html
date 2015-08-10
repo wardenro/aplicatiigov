@@ -5,27 +5,28 @@
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Favicons -->
-	<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
-	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-	<link rel="icon" type="image/png" href="/favicon-194x194.png" sizes="194x194">
-	<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
-	<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
-	<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-	<link rel="manifest" href="/manifest.json">
+	<link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="favicon-194x194.png" sizes="194x194">
+	<link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="manifest.json">
 	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+	<meta name="msapplication-TileImage" content="mstile-144x144.png">
 	<meta name="theme-color" content="#ffffff">
 	<!-- End of favicons -->
 	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
 	<link rel="stylesheet" href="css/global.css" />
+	<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<script src="js/jquery.mobile-1.4.5.min.js"></script>
 
@@ -34,7 +35,7 @@
 
 <div data-role="page">
 
-	<div data-role="header" data-position="fixed">
+	<div data-role="header" data-position="fixed" data-tap-toggle="false">
 		<h1 class="header__title">Despre</h1>
 
 		<a href="#meniu" class="ui-btn ui-shadow ui-btn-icon-left ui-icon-myicon"></a>
@@ -57,19 +58,19 @@
   <p><b>Modalitatea</b> de realizare a aplicației este una inovatoare pentru administrație. 
   Astfel, pentru a nu întrebuința niciun fel de resursă financiară a 
   statului pentru realizarea aplicației, aceasta a fost dezvoltată de către trei dintre stagiarii 
-  <a href=http://internship.gov.ro/>Programului oficial de Internship al Guvernului României</a>, ediția 2015,
+  <a href="#" onclick="window.open('http://internship.gov.ro/', '_system');">Programului oficial de Internship al Guvernului României</a>, ediția 2015,
   care au participat la activitatea DSOD, respectiv:
 <ul>
-  <li><a href=https://ro.linkedin.com/pub/cristian-dobromirescu/102/6ba/a33>Cristi Dobromirescu</a>, student la University of Manchester ;</li>
-  <li><a href=https://uk.linkedin.com/in/mihaelafronie>Mihaela Fronie</a>, studentă la King's College London;</li>
-  <li><a href=http://uk.linkedin.com/in/iuliaralucaionita>Iulia Raluca Ioniță</a>, absolventă a King's College London.</li>
+  <li><a href="#" onclick="window.open('https://ro.linkedin.com/pub/cristian-dobromirescu/102/6ba/a33', '_system');">Cristi Dobromirescu</a>, student la University of Manchester ;</li>
+  <li><a href="#" onclick="window.open('https://uk.linkedin.com/in/mihaelafronie', '_system');">Mihaela Fronie</a>, studentă la King's College London;</li>
+  <li><a href="#" onclick="window.open('http://uk.linkedin.com/in/iuliaralucaionita', '_system');">Iulia Raluca Ioniță</a>, absolventă a King's College London.</li>
 </ul>
 </p>
 <p> Din partea Direcției Servicii Online și Design, au contribuit:
 <ul>
-	<li><a href=https://www.linkedin.com/in/puchiu>Radu Puchiu</a> – secretar de stat;</li>
-	<li><a href=http://www.victorciobanu.com/>Victor Ciobanu</a> – consilier;</li>
-	<li><a href=http://cristianbotan.ro/>Cristian Botan</a> – consilier.</li>
+	<li><a href="#" onclick="window.open('https://www.linkedin.com/in/puchiu', '_system');">Radu Puchiu</a> – secretar de stat;</li>
+	<li><a href="#" onclick="window.open('http://www.victorciobanu.com/', '_system');">Victor Ciobanu</a> – consilier;</li>
+	<li><a href="#" onclick="window.open('http://cristianbotan.ro/', '_system');">Cristian Botan</a> – consilier.</li>
 </ul>
 </p>
 
@@ -96,7 +97,7 @@ exercită conducerea generală a administrației publice. Numirea Guvernului
  şedinţa de Guvern sunt adoptate acte normative. </p>
  
  <p>Informații suplimentare privind activitatea Guvernului sunt disponibile
- online pe pagina oficială a Guvernului –</i> <a href="http://www.gov.ro/">www.gov.ro</a>.</p>
+ online pe pagina oficială a Guvernului –</i> <a href="#" onclick="window.open('http://www.gov.ro/', '_system');">www.gov.ro</a>.</p>
 
 	</div><!-- /content -->
 
