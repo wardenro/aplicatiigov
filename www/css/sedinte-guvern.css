@@ -1,72 +1,87 @@
  /* CSS pentru pagina index.html */
  .main-sedinte h1 {
- 	margin: 0 auto;
- 	text-align: center;
- 	color: #00488E;
- 	font-size: 1.5em;
+    margin: 0 auto;
+    text-align: center;
+    color: #2f598c;
+    font-size: 1.5em;
  }
 
  .main-sedinte {
- 	background-color: #E6EDF4;
+    background-color: #E6EDF4;
  }
 
  .container-sedinte h2 {
-	margin: 30px auto 10px;
-	padding: 5px 10px;
-	text-align: left;
-	font-size: 1.2em;
- 	color: #00488E;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+    margin: 30px auto 10px;
+    padding: 5px 10px;
+    text-align: left;
+    font-size: 1.2em;
+    color: #2f598c;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
  }
 
- .container-sedinte:first-child h2 {
+  .container-sedinte:first-child h2 {
     margin-top: 0;
     padding-top: 0;
  }
+
 .container-sedinte__item__container {
-	box-shadow: 1px 1px 2px #888888;
+    box-shadow: 1px 1px 2px #888888;
     background-color: #ffffff;
-    margin-bottom: 20px !important;	
+    margin-bottom: 20px !important; 
 }
  .container-sedinte__item__container h3{
- 	padding: 5px 0;
+    padding: 5px 0;
  }
 
  .container-sedinte__item__container__content a {
- 	margin-bottom: 10px;
- 	text-decoration: none; 
+    margin-bottom: 10px;
+    text-decoration: none; 
     width: 100%;
     font-size: 1em;
     clear: both;
- 	color: #2f598c;
- 	cursor: pointer;
- 	float: left;
+    color: #00488E;
+    cursor: pointer;
  }
  .container-sedinte__item__container__content {
- 	font-size: 1.2em;
- 	margin-top: 20px;
- 	line-height: 150%;
+    font-size: 1em;
+    margin-top: 20px;
+    line-height: 130%;
  }
 
  .container-sedinte__item__container__data {
- 	margin-top: 10px;
- 	color: #666666;
- 	font-size: 0.85em;
+    margin-top: 10px;
+    color: #666666;
+    font-size: 0.85em;
  }
 
 
+.ui-collapsible-inset.ui-collapsible-themed-content .ui-collapsible-content {
+    margin-top: -5px !important;
+    margin-bottom: 5px !important;
+ }
  .ui-collapsible-heading-toggle {
- 	background-color: #ffffff !important;
- 	border: 0 !important;
- 	text-overflow: initial;
+    background-color: #ffffff !important;
+    border: 0 !important;
+    text-overflow: initial;
     overflow: auto;
     white-space: normal;
     font-weight: 500 !important;
-    line-height: 150%;
-    font-size: 1.2em;
+    line-height: 130%;
+    font-size: 1em;
  }
+ .image_wrapper img {
+    width: 100%;
+    max-width: 364px;
+    margin: 5px auto 10px;
+    display: block;
+ }
+
+ .image_wrapper {
+    text-align: center;
+ }
+
  .ui-collapsible-heading-toggle {
- 	padding: 10px 15px !important;
+    padding: 10px 15px !important;
  }
