@@ -54,7 +54,7 @@
 		content = '<div class="container-stiri__item__container" data-role="collapsible"><h3>' + image(item.imagine) + 
 			   	decodeEntities(item.titlu) +'<div class="container-stiri__item__container__data">' + date.getHours() + ':' + (date.getMinutes()<10?'0':'') + date.getMinutes() +
 			   	'</div></h3><div class="container-stiri__item__container__content"><a href="#" onclick="window.open(\'http://gov.ro/ro/stiri/'+ 
-			   	item.url + '\', \'_system\');">Vezi știre pe site</a><p>'+ 
+			   	item.url + '\', \'_system\', \'location=no\'); return false">Vezi știre pe site</a><p>'+ 
 			   	decodeEntities(item.continut.trim().replace(/\n/g,'<br />').replace(/\t/g,'&nbsp;&nbsp;&nbsp;'))
 			   	 +'</p></div> </div>'
 	   	return content
