@@ -47,38 +47,38 @@ Informații suplimentare privind activitatea Guvernului sunt disponibile online 
   <gap:plugin name="org.apache.cordova.network-information"/>
   <gap:plugin name="org.apache.cordova.splashscreen"/>
   <gap:plugin name="org.apache.cordova.vibration"/>
-  <icon src="www/icon.png" />
-  <icon src="www/res/icon/android/android-chrome-36x36.png" width="36" height="36" gap:platform="android" />
-  <icon src="www/res/icon/android/android-chrome-48x48.png" width="48" height="48" gap:platform="android" />
-  <icon src="www/res/icon/android/android-chrome-72x72.png" width="72" height="72" gap:platform="android" />
-  <icon src="www/res/icon/android/android-chrome-96x96.png" width="96" height="96" gap:platform="android" />
-  <icon src="www/res/icon/android/android-chrome-144x144.png" width="144" height="144" gap:platform="android" />
-  <icon src="www/res/icon/android/android-chrome-192x192.png" width="192" height="192" gap:platform="android" />
-  <icon src="www/res/icon/ios/apple-touch-icon-57x57.png" gap:platform="ios" width="57" height="57" />
-  <icon src="www/res/icon/ios/apple-touch-icon-60x60.png" gap:platform="ios" width="60" height="60" />
-  <icon src="www/res/icon/ios/apple-touch-icon-72x72.png" gap:platform="ios" width="72" height="72" />
-  <icon src="www/res/icon/ios/apple-touch-icon-76x76.png" gap:platform="ios" width="76" height="76" />
-  <icon src="www/res/icon/ios/apple-touch-icon-114x114.png" gap:platform="ios" width="114" height="114" />
-  <icon src="www/res/icon/ios/apple-touch-icon-120x120.png" gap:platform="ios" width="120" height="120" />
-  <icon src="www/res/icon/ios/apple-touch-icon-144x144.png" gap:platform="ios" width="144" height="144" />
-  <icon src="www/res/icon/ios/apple-touch-icon-152x152.png" gap:platform="ios" width="152" height="152" />
-  <icon src="www/res/icon/ios/apple-touch-icon-180x180.png" gap:platform="ios" width="180" height="180" />
-  <gap:splash src="www/res/screen/android/drawable-ldpi/background.9.png" gap:platform="android" gap:qualifier="port-ldpi"/>
-  <gap:splash src="www/res/screen/android/drawable-mdpi/background.9.png" gap:platform="android" gap:qualifier="port-mdpi"/>
-  <gap:splash src="www/res/screen/android/drawable-hdpi/background.9.png" gap:platform="android" gap:qualifier="port-hdpi"/>
-  <gap:splash src="www/res/screen/android/drawable-xhdpi/background.9..png" gap:platform="android" gap:qualifier="port-xhdpi"/>
-  <gap:splash src="www/res/screen/blackberry/screen-225.png" gap:platform="blackberry"/>
-  <gap:splash src="www/res/screen/ios/Default.png" width="320" height="480"/>
-  <gap:splash src="www/res/screen/ios/Default@2x.png" width="640" height="960"/>
-  <gap:splash src="www/res/screen/ios/Default-Portrait.png" width="768" height="1024"/>
-  <gap:splash src="www/res/screen/ios/Default-Portrait@2x.png" width="1536" height="2048"/>
-  <gap:splash src="www/res/screen/ios/Default-Landscape.png" width="1024" height="768"/>
-  <gap:splash src="www/res/screen/ios/Default-Landscape@2x.png" width="2048" height="1536"/>
-  <gap:splash src="www/res/screen/ios/Default-568h@2x.png" width="640" height="1136"/>
-  <gap:splash src="www/res/screen/ios/Default-667h@2x.png" width="750" height="1334"/>
-  <gap:splash src="www/res/screen/ios/Default-736h@2x.png" width="1242" height="2208"/>
-  <gap:splash src="www/res/screen/ios/Default-Landscape-736h@3x.png" width="2208" height="1242"/>
-  <gap:splash src="www/res/screen/windows-phone/screen-portrait.jpg" gap:platform="winphone"/>
+  <icon src="icon.png" />
+  <icon src="res/icon/android/android-chrome-36x36.png" width="36" height="36" gap:platform="android" />
+  <icon src="res/icon/android/android-chrome-48x48.png" width="48" height="48" gap:platform="android" />
+  <icon src="res/icon/android/android-chrome-72x72.png" width="72" height="72" gap:platform="android" />
+  <icon src="res/icon/android/android-chrome-96x96.png" width="96" height="96" gap:platform="android" />
+  <icon src="res/icon/android/android-chrome-144x144.png" width="144" height="144" gap:platform="android" />
+  <icon src="res/icon/android/android-chrome-192x192.png" width="192" height="192" gap:platform="android" />
+  <icon src="res/icon/ios/apple-touch-icon-57x57.png" gap:platform="ios" width="57" height="57" />
+  <icon src="res/icon/ios/apple-touch-icon-60x60.png" gap:platform="ios" width="60" height="60" />
+  <icon src="res/icon/ios/apple-touch-icon-72x72.png" gap:platform="ios" width="72" height="72" />
+  <icon src="res/icon/ios/apple-touch-icon-76x76.png" gap:platform="ios" width="76" height="76" />
+  <icon src="res/icon/ios/apple-touch-icon-114x114.png" gap:platform="ios" width="114" height="114" />
+  <icon src="res/icon/ios/apple-touch-icon-120x120.png" gap:platform="ios" width="120" height="120" />
+  <icon src="res/icon/ios/apple-touch-icon-144x144.png" gap:platform="ios" width="144" height="144" />
+  <icon src="res/icon/ios/apple-touch-icon-152x152.png" gap:platform="ios" width="152" height="152" />
+  <icon src="res/icon/ios/apple-touch-icon-180x180.png" gap:platform="ios" width="180" height="180" />
+  <gap:splash src="res/screen/android/drawable-ldpi/background.9.png" gap:platform="android" gap:qualifier="port-ldpi"/>
+  <gap:splash src="res/screen/android/drawable-mdpi/background.9.png" gap:platform="android" gap:qualifier="port-mdpi"/>
+  <gap:splash src="res/screen/android/drawable-hdpi/background.9.png" gap:platform="android" gap:qualifier="port-hdpi"/>
+  <gap:splash src="res/screen/android/drawable-xhdpi/background.9..png" gap:platform="android" gap:qualifier="port-xhdpi"/>
+  <gap:splash src="res/screen/blackberry/screen-225.png" gap:platform="blackberry"/>
+  <gap:splash src="res/screen/ios/Default.png" width="320" height="480"/>
+  <gap:splash src="res/screen/ios/Default@2x.png" width="640" height="960"/>
+  <gap:splash src="res/screen/ios/Default-Portrait.png" width="768" height="1024"/>
+  <gap:splash src="res/screen/ios/Default-Portrait@2x.png" width="1536" height="2048"/>
+  <gap:splash src="res/screen/ios/Default-Landscape.png" width="1024" height="768"/>
+  <gap:splash src="res/screen/ios/Default-Landscape@2x.png" width="2048" height="1536"/>
+  <gap:splash src="res/screen/ios/Default-568h@2x.png" width="640" height="1136"/>
+  <gap:splash src="res/screen/ios/Default-667h@2x.png" width="750" height="1334"/>
+  <gap:splash src="res/screen/ios/Default-736h@2x.png" width="1242" height="2208"/>
+  <gap:splash src="res/screen/ios/Default-Landscape-736h@3x.png" width="2208" height="1242"/>
+  <gap:splash src="res/screen/windows-phone/screen-portrait.jpg" gap:platform="winphone"/>
   <access origin="*"/>
   <plugin name="cordova-plugin-whitelist" version="1"/>
   <allow-intent href="http://*/*"/>
