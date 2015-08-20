@@ -41,7 +41,7 @@
 		   	} else {
 			   	// daca nu, creaza un nou container cu data publicarii ca si clasa
 			   	content = '<div class="container-stiri__item ' + 
-			   	dateString + '"><h2> Ședința din ' + 
+			   	dateString + '"><h2> Știre din ' + 
 			   	formattedDate + '</h2>' + contentStiri(item, date) + '</div>'
 			   	$('.container-stiri').append(content).html();
 				$('.container-stiri').collapsibleset('refresh')

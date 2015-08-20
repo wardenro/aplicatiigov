@@ -42,7 +42,7 @@
 		   	} else {
 			   	// daca nu, creaza un nou container cu data publicarii ca si clasa
 			   	content = '<div class="container-agenda__item ' 
-			   	+ dateString + '"><h2> Ședința din ' + 
+			   	+ dateString + '"><h2> Ştire din ' + 
 			   	formattedDate + '</h2>' + contentagenda(item, date) + '</div>'
 			   	$('.container-agenda').append(content);
 				$('.container-agenda').collapsibleset('refresh')
