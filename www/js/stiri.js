@@ -54,10 +54,10 @@
 	function contentStiri(item, date){
 		content = '<div class="container-stiri__item__container" data-role="collapsible"><h3>' + image(item.imagine) + 
 			   	decodeEntities(item.titlu) +'<div class="container-stiri__item__container__data">' + date.getHours() + ':' + (date.getMinutes()<10?'0':'') + date.getMinutes() +
-			   	'</div></h3><div class="container-stiri__item__container__content"><a href="#" onclick="window.open(\'http://gov.ro/ro/stiri/'+ 
-			   	item.url + '\', \'_system\'); return false">Vezi știre pe site</a> <p>'+ 
+			   	'</div></h3><div class="container-stiri__item__container__content"><button onclick="window.plugins.socialsharing.share(\'Message only\')"><img src="images/share-icon.png" width="25" height="25" /></button><p><a href="#" onclick="window.open(\'http://gov.ro/ro/stiri/'+ 
+			   	item.url + '\', \'_system\'); return false">Vezi știre pe site</a></p> <p>'+ 
 			   	decodeEntities(item.continut.trim().replace(/\n/g,'<br />').replace(/\t/g,'&nbsp;&nbsp;&nbsp;'))
-			   	 +'</p><button onclick="window.plugins.socialsharing.share(\'Message only\')">message only</button></div> </div>'
+			   	 +'</p></div> </div>'
 	   	return content
 	}
 
