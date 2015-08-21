@@ -24,7 +24,18 @@
 	<script src="js/jquery.mobile-1.4.5.min.js"></script>
 	<script src="js/global.js"></script>
 	<script src="js/ministri.js"></script>
+    <script>
+    var $window = $(window), previousScrollTop = 0, scrollLock = true;
 
+	$window.scroll(function(event) 
+		{     
+		    if(scrollLock) 
+		    {
+		        $window.scrollTop(previousScrollTop); 
+		    }
+			previousScrollTop = $window.scrollTop();
+	    });
+    </script>
 </head>
 <body>
 <div data-role="page">
@@ -35,7 +46,7 @@
 	</div><!-- /header -->
 
 	<div role="main" class="ui-content main-ministri">
-		<div class="container-ministri" <div data-role="collapsible-set"></div>
+		<div class="container-ministri" data-role="collapsible-set"></div>
           
     </div><!-- /content -->
 

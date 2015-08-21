@@ -60,6 +60,7 @@ a, a:focus, a:active {
 
 .ui-panel {
 	background-color: #00488E;
+	position: fixed;
 }
 
 .ui-btn{ 
