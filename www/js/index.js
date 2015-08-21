@@ -56,7 +56,8 @@
 	function contentagenda(item, date){
 		content = '<div class="container-agenda__item__container" data-role="collapsible"><h3>' 
 		   		+ decodeEntities(item.titlu)+'<div class="container-agenda__item__container__data">' + date.getHours() + ':' + (date.getMinutes()<10?'0':'') + date.getMinutes() + '</div></h3><div class="container-agenda__item__container__content"><a href="#" onclick="window.open(\'http://gov.ro/ro/guvernul/agenda-guvern/'+ 
-			   	item.url + '\', \'_system\');">Vezi ședința pe site</a>'+ 
+			   	item.url + '\', \'_system\');">Vezi ședința pe site</a>
+	<button onclick="window.plugins.socialsharing.share(\'Message only\')">message only</button>'+ 
 		   		decodeEntities(item.continut.trim().replace(/\n/g,'<br />').replace(/\t/g,'&nbsp;&nbsp;&nbsp;')) + '</div></div>'
 	   	return content
 	}
