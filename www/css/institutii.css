@@ -2,29 +2,8 @@
   background-color: #E6EDF4;
  }
 
-img.resize{
-/*  position: relative;
-  top: 5px;
-   width:120px; 
-   right: 30px;*/
-   float: left;
-   width: 50%;  
-   padding: 5px 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-.functie {
-/*    position: absolute;
-    bottom: 100px;
-    left: 150px;*/
-    width: 50% ;
-    float: left;
-    padding: 10px 20px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
+
+
 .ui-collapsible-heading-toggle {
   padding: 0;
   overflow: hidden;
@@ -35,7 +14,7 @@ img.resize{
       top:2px;*/
       border:2px solid ;
       border-color: #000099;
-      background-color: #000099;
+      background-color: #336495;
       color:white;
       border-radius: 5px;
       font-weight: lighter;
