@@ -34,7 +34,7 @@ a, a:focus, a:active {
 }
 
 .social_share_button img{
-	margin-right: 5px;
+	margin-left: -10px;
 }
 
 .ui-icon-plus:after, .ui-icon-minus:after {
