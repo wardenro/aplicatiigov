@@ -1,11 +1,6 @@
     $(document).ready(function(){
     	var pageNo = 0;
 		getContent(pageNo);
-		// Verifica daca marimea ferestrei este mai mare decat continutul(daca se poate face scroll)
-		if ($("body").height() < $(window).height()) {
-			pageNo++;
-			getNext(pageNo);
-		}
 		$(window).scroll(function() {
 	   		if($(window).scrollTop() + $(window).height() == $(document).height()) {
 	   			pageNo++;
@@ -29,6 +24,8 @@
 		  url: myurl,
 		  type: 'GET',
 		  }).done(function ( data ) {
+			console.log(pageNo)
+		   	console.log(data.rez)
 		   $.each(data.rez, function(i, item){
 		   	var date = Date.parse(item.data_publicarii);
 		   	var dateString = date.getDate() + date.getMonth() + date.getFullYear();

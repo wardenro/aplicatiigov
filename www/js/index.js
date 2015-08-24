@@ -1,11 +1,6 @@
     $(document).ready(function(){
     	var pageNo = 0;
 		getContent(pageNo);
-		// Verifica daca marimea ferestrei este mai mare decat continutul(daca se poate face scroll)
-		if ($("body").height() < $(window).height()) {
-			pageNo++;
-			getNext(pageNo);
-		}
 		$(window).scroll(function() {
 	   		if($(window).scrollTop() + $(window).height() == $(document).height()) {
 	   			pageNo++;
@@ -30,7 +25,6 @@
 		  type: 'GET',
 		  }).done(function ( data ) {
 		   $.each(data.rez, function(i, item){
-		   	console.log(data.rez)
 		   	var date = Date.parse(item.data_publicarii);
 		   	var dateString = date.getDate() + date.getMonth() + date.getFullYear();
 		    var formattedDate = date.getDate() + ' ' + month(date.getMonth()) + ' ' + date.getFullYear().toString();
