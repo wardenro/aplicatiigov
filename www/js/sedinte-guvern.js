@@ -25,8 +25,10 @@
 		  type: 'GET',
 		  }).done(function ( data ) {
 		   $.each(data.rez, function(i, item){
-		   	var date = Date.parse(item.data_publicarii);
-		   	var dateString = date.getDate() + date.getMonth() + date.getFullYear()
+		   	console.log(item.data_publicarii)
+		   	var date = Date.parse(item.data_publicarii.replace( /(\d{2})-(\d{2})-(\d{4})/, "$2/$1/$3"));
+		   	console.log(date)
+		   	var dateString = date.getDate().toString() + date.getMonth().toString() + date.getFullYear().toString()
 		   	var formattedDate = date.getDate() + ' ' + month(date.getMonth()) + ' ' + date.getFullYear();
 		   	// vezi daca exista container pentru obiect in functie de data publicarii
 		   	if ($('.'+dateString).length > 0) {
