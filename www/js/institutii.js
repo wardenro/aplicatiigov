@@ -10,7 +10,12 @@ $.ajax({
 	
    content = '<h3>' + '<div class="nume">' + item.titlu + '</div></h3>' +
    '<p> <div class="link"><a href="#" onclick="window.open(\''+ 
-			   	item.link + '\', \'_system\');">'+item.link+'</a></div></p></div>';
+			   	item.link + '\', \'_system\');">'+item.link+'</a></div></p>';
+	if(item.facebook!="")
+	{
+		content=content+'<p><a href="#" onclick="window.open(\''+ 
+			   	item.facebook + '\', \'_system\');">'+'<img class="resize" src="C:/Users/k7r14ea/Desktop/internship/www/images/social_facebook_box_blue.png" style="width:30px;height:30px"</a></p></div>';
+	}		
   
   //<a href="#" onclick="window.open(\'http://gov.ro/ro/guvernul/sedinte-guvern/'+ 
 			   	//item.url + '\', \'_system\');">Vezi ședința pe site</a><p>'
