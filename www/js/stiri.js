@@ -24,8 +24,6 @@
 		  url: myurl,
 		  type: 'GET',
 		  }).done(function ( data ) {
-			console.log(pageNo)
-		   	console.log(data.rez)
 		   $.each(data.rez, function(i, item){
 		   	var date = Date.parse(item.data_publicarii);
 		   	var dateString = date.getDate() + date.getMonth() + date.getFullYear();
