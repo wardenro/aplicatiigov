@@ -1,11 +1,6 @@
     $(document).ready(function(){
     	var pageNo = 0;
 		getContent(pageNo);
-		// Verifica daca marimea ferestrei este mai mare decat continutul(daca se poate face scroll)
-		if ($("body").height() < $(window).height()) {
-			pageNo++;
-			getNext(pageNo);
-		}
 		$(window).scroll(function() {
 	   		if($(window).scrollTop() + $(window).height() == $(document).height()) {
 				pageNo++;
@@ -56,7 +51,7 @@
 		var titlu = decodeEntities(item.titlu)
 		var url = 'http://gov.ro/ro/guvernul/sedinte-guvern/'+   	item.url
 		content = '<div class="container-sedinte__item__container" data-role="collapsible"><h3>' 
-		   		+ decodeEntities(item.titlu)+'<div class="container-sedinte__item__container__data">' + date.getHours() + ':' + (date.getMinutes()<10?'0':'') + date.getMinutes() + '</div></h3><div class="container-sedinte__item__container__content"><button class="social_share_button" onclick="window.plugins.socialsharing.share(\'' + titlu + '\', \'' + titlu + '\', \'' + item.imagine + '\', \'' + url + '\')"><img src="images/share-icon.png" width="25" height="25" /></button><p><a href="#" onclick="window.open(\'http://gov.ro/ro/guvernul/sedinte-guvern/'+ 
+		   		+ decodeEntities(item.titlu)+'<div class="container-sedinte__item__container__data">' + date.getHours() + ':' + (date.getMinutes()<10?'0':'') + date.getMinutes() + '</div></h3><div class="container-sedinte__item__container__content"><button class="social_share_button" onclick="window.plugins.socialsharing.share(\'' + titlu + '\', \'' + titlu + '\',  null, \'' + url + '\')"><img src="images/share-icon.png" width="25" height="25" /></button><p><a href="#" onclick="window.open(\'http://gov.ro/ro/guvernul/sedinte-guvern/'+ 
 			   	item.url + '\', \'_system\');">Vezi ședința pe site</a></p><p>'+ 
 		   		decodeEntities(item.continut.trim().replace(/\n/g,'<br />').replace(/\t/g,'&nbsp;&nbsp;&nbsp;')) + '</p></div></div>'
 	   	return content
