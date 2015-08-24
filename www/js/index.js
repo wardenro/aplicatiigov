@@ -8,7 +8,7 @@
 		}
 		$(window).scroll(function() {
 	   		if($(window).scrollTop() + $(window).height() == $(document).height()) {
-				pageNo++;
+	   			pageNo++;
 	   			getNext(pageNo);
 			}
 		})
@@ -16,14 +16,13 @@
 	
 
     function getNext(pageNo) {
-		pageNo++;
 		getContent(pageNo);
     }
 	function getContent(pageNo){
 		if (pageNo == 0) {
-			var myurl = 'http://gov.ro/ro/json-agenda';
+			var myurl = 'http://gov.ro/ro/json';
 		} else {
-			var myurl = 'http://gov.ro/ro/json-agenda&page=' + pageNo;
+			var myurl = 'http://gov.ro/ro/json&page=' + pageNo;
 		}
 		$.ajax({
 		  dataType: "jsonp",
@@ -32,31 +31,32 @@
 		  }).done(function ( data ) {
 		   $.each(data.rez, function(i, item){
 		   	var date = Date.parse(item.data_publicarii);
-		   	var dateString = date.getDate() + date.getMonth() + date.getFullYear()
-		   	var formattedDate = date.getDate() + ' ' + month(date.getMonth()) + ' ' + date.getFullYear();
+		   	var dateString = date.getDate() + date.getMonth() + date.getFullYear();
+		    var formattedDate = date.getDate() + ' ' + month(date.getMonth()) + ' ' + date.getFullYear().toString();
 		   	// vezi daca exista container pentru obiect in functie de data publicarii
 		   	if ($('.'+dateString).length > 0) {
 		   		// daca da, adauga la finalul containerului
-				$('.'+dateString).append(contentagenda(item, date));
+				$('.'+dateString).append(contentAgenda(item, date)).html();
 				$('.container-agenda').collapsibleset('refresh')
 		   	} else {
 			   	// daca nu, creaza un nou container cu data publicarii ca si clasa
-			   	content = '<div class="container-agenda__item ' 
-			   	+ dateString + '"><h2> Ştire din ' + 
-			   	formattedDate + '</h2>' + contentagenda(item, date) + '</div>'
-			   	$('.container-agenda').append(content);
+			   	content = '<div class="container-agenda__item ' + 
+			   	dateString + '"><h2> Știre din ' + 
+			   	formattedDate + '</h2>' + contentAgenda(item, date) + '</div>'
+			   	$('.container-agenda').append(content).html();
 				$('.container-agenda').collapsibleset('refresh')
+
 			}
 			})
-
-
 		  });
+	}	
 
-	}    			
-	function contentagenda(item, date){
+	function contentAgenda(item, date){
+		var titlu = decodeEntities(item.titlu)
+		var url = 'http://gov.ro/ro/guvernul/agenda-guvern/'+   	item.url
 		content = '<div class="container-agenda__item__container" data-role="collapsible"><h3>' 
-		   		+ decodeEntities(item.titlu)+'<div class="container-agenda__item__container__data">' + date.getHours() + ':' + (date.getMinutes()<10?'0':'') + date.getMinutes() + '</div></h3><div class="container-agenda__item__container__content"><a href="#" onclick="window.open(\'http://gov.ro/ro/guvernul/agenda-guvern/'+ 
-			   	item.url + '\', \'_system\');">Vezi ședința pe site</a>'+ 
-		   		decodeEntities(item.continut.trim().replace(/\n/g,'<br />').replace(/\t/g,'&nbsp;&nbsp;&nbsp;')) + '</div></div>'
+		   		+ decodeEntities(item.titlu)+'<div class="container-agenda__item__container__data">' + date.getHours() + ':' + (date.getMinutes()<10?'0':'') + date.getMinutes() + '</div></h3><div class="container-agenda__item__container__content"><button class="social_share_button" onclick="window.plugins.socialsharing.share(\'' + titlu + '\', \'' + titlu + '\', \'' + item.imagine + '\', \'' + url + '\')"><img src="images/share-icon.png" width="25" height="25" /></button><p><a href="#" onclick="window.open(\'http://gov.ro/ro/guvernul/agenda-guvern/'+ 
+			   	item.url + '\', \'_system\');">Vezi ședința pe site</a></p><p>'+ 
+		   		decodeEntities(item.continut.trim().replace(/\n/g,'<br />').replace(/\t/g,'&nbsp;&nbsp;&nbsp;')) + '</p></div></div>'
 	   	return content
 	}

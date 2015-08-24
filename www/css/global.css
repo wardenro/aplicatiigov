@@ -20,6 +20,23 @@ a, a:focus, a:active {
 	outline: none !important;
 }
 
+.social_share_button {
+	background: none;
+	border: none;
+	margin-bottom: 10px;    
+	background-color: lightgray;
+    width: 45px;
+    height: 45px;
+    line-height: 60px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
+
+.social_share_button img{
+	margin-left: -5px;
+}
+
 .ui-icon-plus:after, .ui-icon-minus:after {
 	display: none;
 }
