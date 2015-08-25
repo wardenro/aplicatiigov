@@ -17,6 +17,7 @@
 	<!-- End of favicons -->
 	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
 	<link rel="stylesheet" href="css/global.css" />
+	<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<script src="js/jquery.mobile-1.4.5.min.js"></script>
 	<script src="js/global.js"></script>
@@ -39,13 +40,9 @@
 		<a href="ministri.html" data-ajax="false"  class="ui-btn ui-corner-all">Cabinet Miniștri</a>
 		<a href="sedinte-guvern.html" data-ajax="false" class="ui-btn ui-corner-all">Ședințe Guvern</a>
 		<a href="stiri.html" data-ajax="false" class="ui-btn ui-corner-all">Știri</a>
-		<a href="institutii.html" data-ajax="false" class="ui-btn ui-corner-all">Legături</a>
-		<a href="video.html"  class="ui-btn">Video</a>
-		<a href="window.open('https://www.facebook.com/guv.ro', '_system');" data-ajax="false" class="ui-btn ui-corner-all icon-facebook">Facebook</a>
-		<a href="window.open('https://twitter.com/guv_ro', '_system');" data-ajax="false" class="ui-btn ui-corner-all icon-twitter">Twitter</a>
-		<a href="window.open('https://www.youtube.com/user/guvernulromaniei', '_system');" data-ajax="false" class="ui-btn ui-corner-all icon-youtube">Youtube</a>
-		<a href="window.open('https://plus.google.com/+guvernulromaniei/posts', '_system');" data-ajax="false" class="ui-btn ui-corner-all icon-google">Google+</a>
-		<a href="window.open('https://www.linkedin.com/company/guvernul-rom-niei', '_system');" data-ajax="false" class="ui-btn ui-corner-all icon-linkedin">Linkedin</a>
+		<a href="institutii.html" data-ajax="false" class="ui-btn ui-corner-all">Instituții</a>
+		<a href="video.html" data-ajax="false" class="ui-btn">Video</a>
+		<a href="social.html" data-ajax="false" class="ui-btn">Social Media</a>
 		<a href="termeni si conditii.html" data-ajax="false"  class="ui-btn ui-corner-all">Termeni și condiții</a>
 		<a href="Despre.html" data-ajax="false" class="ui-btn ui-corner-all">Despre</a>
 <!--final meniu-->
@@ -55,37 +52,7 @@
 	
 	
 	<div role="main" class="ui-content main-ministri">
-		<div class="container-ministri" <div data-role="collapsible-set"></div>
-              
-		
-		
-		
-	<!--	
-https://www.googleapis.com/youtube/v3/channels?part=contentDetails&forUsername=guvernulromaniei&key=AIzaSyAatoMZBB2i0T8BcdgIx20xsypdNVhphPc
-
-https://www.googleapis.com/youtube/v3/playlistItems?playlistId=PLVvoFIJvWUtYvBbvnq7dZUzza3cyFLv-2&key=AIzaSyAatoMZBB2i0T8BcdgIx20xsypdNVhphPc&fields=items&part=snippet&maxResults=20
-
-<script>
-var videosURL = "https://www.googleapis.com/youtube/v3/playlistItems?playlistId=PLVvoFIJvWUtYvBbvnq7dZUzza3cyFLv-2&key=AIzaSyAatoMZBB2i0T8BcdgIx20xsypdNVhphPc&fields=items&part=snippet&maxResults=6&callback=?";
-
-
-$.getJSON(videosURL, function(data) {
-$.each(data.items, function(i,val) {
-console.log(val.snippet.title);
-console.log(val.snippet.resourceId.videoId);   
- });
-});
-</script>
-
-	<center>	
-   <iframe width="560" height="315" src="https://www.youtube.com/embed/9Dsz9GkV3Bs?list=PLVvoFIJvWUtYvBbvnq7dZUzza3cyFLv-2" frameborder="0" allowfullscreen></iframe>
-			</center>
-
-		
-	 -->
-
-
-		
+		<div class="container-ministri"></div>
 		
 		</div><!-- /content -->
 
