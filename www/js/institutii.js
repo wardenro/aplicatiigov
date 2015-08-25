@@ -10,22 +10,22 @@ $.ajax({
 	
    content = '<h3>' + '<div class="nume">' + item.titlu + '</div></h3>' +
    '<p> <div class="link"><a href="#" onclick="window.open(\''+ 
-			   	item.link + '\', \'_system\'); return false">'+item.link+'</a></div></p>';
+			   	item.link + '\', \'_system\');" target="_blank">'+item.link+'</a></div></p>';
 	if(item.facebook!="")
 	{
 		content=content +'<a href="#" onclick="window.open(\''+ 
-			   	item.facebook + '\', \'_system\'); return false">'+'<img class="resize" src="images/social_facebook_box_blue.png"; style="width:30px;height:30px"</a></div>';
+			   	item.facebook + '\', \'_system\'); "target="_blank">'+'<img class="resize" src="images/social_facebook_box_blue.png"; style="width:30px;height:30px"</a></div>';
 	}		
   
 	if(item.youtube!="")
 	{
 		content=content +'<a href="#" onclick="window.open(\''+ 
-			   	item.youtube + '\', \'_system\'); return false">'+'<img class="resize" src="images/YouTube-icon.png" style="width:30px;height:30px"</a></div>';
+			   	item.youtube + '\', \'_system\'); "target="_blank">'+'<img class="resize" src="images/YouTube-icon.png" style="width:30px;height:30px"</a></div>';
 	}		
 	if(item.twitter!="")
 	{
 		content=content+'<a href="#" onclick="window.open(\''+ 
-			   	item.twitter + '\', \'_system\'); return false">'+'<img class="resize" src="images/Twitter_Logo_Hd_Png_03.png" style="width:30px;height:30px"</a></div>';
+			   	item.twitter + '\', \'_system\'); "target="_blank">'+'<img class="resize" src="images/Twitter_Logo_Hd_Png_03.png" style="width:30px;height:30px"</a></div>';
 	}		
   
   
