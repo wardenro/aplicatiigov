@@ -98,6 +98,41 @@ a, a:focus, a:active {
   	color: #333 !important;
  }
 
+ .icon-twitter {
+ 	background: url('../images/icon_twitter.png');
+ 	background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: 20px;
+ }
+
+ .icon-facebook {
+ 	background: url('../images/icon_facebook.png');
+ 	background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: 20px;
+ }
+
+ .icon-youtube {
+ 	background: url('../images/icon_youtube.png');
+ 	background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: 20px;
+ }
+
+ .icon-linkedin {
+ 	background: url('../images/icon_linkedin.png');
+ 	background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: 20px;
+ }
+
+ .icon-google {
+ 	background: url('../images/icon_google.png');
+ 	background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: 20px;
+ }
+
  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
     .image_wrapper {
         width: 30%;
