@@ -13,9 +13,22 @@ $.ajax({
 			   	item.link + '\', \'_system\');">'+item.link+'</a></div></p>';
 	if(item.facebook!="")
 	{
-		content=content+'<p><a href="#" onclick="window.open(\''+ 
-			   	item.facebook + '\', \'_system\');">'+'<img class="resize" src="C:/Users/k7r14ea/Desktop/internship/www/images/social_facebook_box_blue.png" style="width:30px;height:30px"</a></p></div>';
+		content=content +'<a href="#" onclick="window.open(\''+ 
+			   	item.facebook + '\', \'_system\');">'+'<img class="resize" src="C:/Users/k7r14ea/Desktop/internship/www/images/social_facebook_box_blue.png" style="width:30px;height:30px"</a></div>';
 	}		
+  
+	if(item.youtube!="")
+	{
+		content=content +'<a href="#" onclick="window.open(\''+ 
+			   	item.youtube + '\', \'_system\');">'+'<img class="resize" src="C:/Users/k7r14ea/Desktop/internship/www/images/YouTube-icon.png" style="width:30px;height:30px"</a></div>';
+	}		
+	if(item.twitter!="")
+	{
+		content=content+'<a href="#" onclick="window.open(\''+ 
+			   	item.twitter + '\', \'_system\');">'+'<img class="resize" src="C:/Users/k7r14ea/Desktop/internship/www/images/Twitter_Logo_Hd_Png_03.png" style="width:30px;height:30px"</a></div>';
+	}		
+  
+  
   
   //<a href="#" onclick="window.open(\'http://gov.ro/ro/guvernul/sedinte-guvern/'+ 
 			   	//item.url + '\', \'_system\');">Vezi ședința pe site</a><p>'

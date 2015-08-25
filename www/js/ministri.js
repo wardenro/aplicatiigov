@@ -15,8 +15,8 @@ $.ajax({
   $.mobile.silentScroll(position);
 });
   
+  
    $('.container-ministri').append(content);
-
    $('.container-ministri').collapsibleset('refresh');
 	
 	
