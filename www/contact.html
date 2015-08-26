@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact</title>
+
+	<meta charset="utf-8">
+	
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Favicons -->
+	<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="favicon-194x194.png" sizes="194x194">
+	<link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="mstile-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<!-- End of favicons -->
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="css/global.css" />
+	<link rel="stylesheet" href="css/contact.css" />
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+	<script src="js/global.js"></script>
+	 <style>
+      #map {
+        width: 350px;
+        height: 350px;
+		left: 600px;
+		
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+   <script>
+
+function initMap() {
+  var myLatLng = {lat: 44.453092, lng: 26.087352};
+
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 17,
+    center: myLatLng
+  });
+
+  var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    title: 'Hello World!'
+  });
+}
+
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?signed_in=true&callback=initMap"></script>
+</head>
+<body>
+
+<div data-role="page">
+
+	<div data-role="header" data-position="fixed" data-tap-toggle="false">
+		<h1 class="header__title">Contact</h1>
+		<a href="#meniu" class="ui-btn ui-shadow ui-btn-icon-left ui-icon-myicon"></a>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content main-institutii">
+		<div class="container-contact" ></div>
+          
+    </div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+		
+	</div><!-- /footer -->
+	<div class="blabla">
+		<div id="map"></div>
+	
+	</div>
+	
+	<div role="main" class="ui-content">
+	<b><font size="5">Contact </b></font>
+	<p><b><font size="4"> Guvernul României</font> </b></p>
+	<p><i>Adresă:</i>
+	<br>Palatul Victoria, Piaţa Victoriei nr. 1, Sector 1, Bucureşti, cod postal 011791</br></p>
+	<p><i>Adresă web: </i> <a href="www.gov.ro"> www.gov.ro  </a> </p>
+	<p><i> Telefon centrală:</i> <br> 40-21-314 34 00 / 40-21-319 15 64 </p>
+	<br>
+	<p><b><font size="4"> Stai în legătură cu noi </font></b></p>
+	
+	<p><a href="#" onclick="window.open('http://newsletter.gov.ro/', '_system');"><img class="resize" src="images/newsletter.png" style="width:30px;height:30px"</a><span class="title">Abonează-te la newsletter</span></a>
+	<br><br>
+	<a href="#" onclick="window.open('https://twitter.com/guv_ro', '_system');"><img class="resize" src="images/Twitter_Logo_Hd_Png_03.png" style="width:30px;height:30px"</a><span class="title">Twitter</span></a>
+	<a href="#" onclick="window.open('https://plus.google.com/+guvernulromaniei/posts', '_system');"><img class="resize" src="images/googleplus.png" style="width:30px;height:30px"</a><span class="title">Google+</span></a>
+	<a href="#" onclick="window.open('https://www.linkedin.com/company/guvernul-rom-niei', '_system');"><img class="resize" src="images/linkedin.png" style="width:30px;height:30px"</a><span class="title">LinkedIn</span></a>
+	<a href="#" onclick="window.open('https://www.facebook.com/guv.ro', '_system');"><img class="resize" src="images/social_facebook_box_blue.png" style="width:30px;height:30px"</a><span class="title">Facebook</span></a>
+	</p>
+	<br>
+	<table style="width:62%; font-size=7" >
+  <tr style="font-size:20px;">
+    <td width="40%"><b>Relaţii cu publicul</b></td>
+    <td width="40%"><b>Relaţii petiţii</b></td> 
+    <td width="40%"><b>Registratură generală</b></td>
+  </tr>
+  <tr style="font-size:13px">
+    <td width="40%"><i><b>Birou audienţe cetăţeni:</b><br>
+(accesul publicului se face dinspre strada Paris, pe la intrarea "C" a Palatului Victoria).</i><br><br>
+	<b><i>Program:</b></i><br>
+	Program:08:30-16:30 luni – vineri<br><br>
+
+	<b><i>Telefon:</b></i><br>
+	021 314 34 00 - interior 1006
+
+</td>
+
+
+    <td width="40%"><b><i>Telefon:</b></i><br>
+021 314 34 00 - interior 1903<br><br>
+
+<b><i>Fax:</b></i><br>
+021 313 98 46<br><br>
+
+<b><i>Adresa de e-mail:</b></i><br>
+drp@gov.ro
+
+
+</td> 
+    <td width="40%"><b><i>Program:</b></i><br>
+08:00-18:30 Luni, miercuri, joi, vineri 08:00-19:00 Marţi<br><br>
+
+<b><i>Telefon:</b></i><br>
+021 314 34 00 - interior 1288
+
+</td>
+  </tr>
+</table>
+
+	</div>
+	
+	
+	
+
+	<div data-role="panel" id="meniu" data-theme="b" data-display="overlay" >
+		<a href="index.html" data-ajax="false" class="ui-btn ui-corner-all ">Agendă</a>
+		<a href="ministri.html" data-ajax="false"  class="ui-btn ui-corner-all">Cabinet Miniștri</a>
+		<a href="sedinte-guvern.html" data-ajax="false" class="ui-btn ui-corner-all">Ședințe Guvern</a>
+		<a href="stiri.html" data-ajax="false" class="ui-btn ui-corner-all">Știri</a>
+		<a href="institutii.html" data-ajax="false" class="ui-btn ui-corner-all">Legături</a>
+		<a href="video.html"  class="ui-btn">Video</a>
+		<a href="termeni si conditii.html" data-ajax="false"  class="ui-btn ui-corner-all">Termeni și condiții</a>
+		<a href="Despre.html" data-ajax="false" class="ui-btn ui-corner-all">Despre</a>
+	</div><!-- /panel -->
+	
+</div><!-- /page -->
+
+
+
+
+</body>
+</html>
