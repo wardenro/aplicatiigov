@@ -10,43 +10,15 @@
 }
 
 .blabla{
-	width:0px;
-	height:0px;
+	width:350px;
+	height:350px;
 }
-	 html, body, #map, #main{
-     width:100%;
-     height:100%;
-   }
-
-   #map
-    {
-     
-     position:absolute;
-	  top:0;
-     left:0;
-    }
-   #header {
-     height: 100px;
-     position:absolute;
-     z-index:1;
-   }
-   #main {
-     position:absolute;
-     top:0;
-     left:0;
-
-   }
-   #footer {
-    position:absolute;
-    height: 100px;
-    bottom: 0px;
-     z-index:1;
-   }
-
-
+	
 
 .resize{
 	position:relative; width:50px;height:50px;vertical-align:middle;
+	margin-left:5px; 
+margin-right:10px
 	}
 .resize span.title { 
 position:relative; top:0; left:50px; width:50px; 	
