@@ -23,14 +23,6 @@
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<script src="js/jquery.mobile-1.4.5.min.js"></script>
 	<script src="js/global.js"></script>
-	 <style>
-      #map {
-        width: 350px;
-        height: 350px;
-		
-		
-      }
-    </style>
     <script src="https://maps.googleapis.com/maps/api/js"></script>
    <script>
 
@@ -45,7 +37,7 @@ function initMap() {
   var marker = new google.maps.Marker({
     position: myLatLng,
     map: map,
-    title: 'Hello World!'
+    title: 'Guvernul României'
   });
 }
 
@@ -60,75 +52,52 @@ function initMap() {
 	<div data-role="header" data-position="fixed" data-tap-toggle="false">
 		<h1 class="header__title">Contact</h1>
 		<a href="#meniu" class="ui-btn ui-shadow ui-btn-icon-left ui-icon-myicon"></a>
-	</div><!-- /header -->
-
-	<div role="main" class="ui-content main-institutii">
-		<div class="container-contact" ></div>
-          
-    </div><!-- /content -->
-
-	<div data-role="footer" data-position="fixed">
-		
-	</div><!-- /footer -->
+	</div><!-- /header -->	
 	
-	
-	<div role="main" class="ui-content">
-	<b><font size="5">Contact </b></font>
-	<p><b><font size="4"> Guvernul României</font> </b></p>
+	<div role="main" class="ui-content main-contact">
+	<h2>Contact</h2>
+	<h3>Guvernul României</h3>
+	<div class="contact-container ui-corner-all">
+   
 	<p><i>Adresă:</i>
 	<br>Palatul Victoria, Piaţa Victoriei nr. 1, Sector 1, Bucureşti, cod postal 011791</br></p>
 	<p><i>Adresă web: </i> <a href="http://gov.ro/"> www.gov.ro  </a> </p>
 	<p><i> Telefon centrală:</i> <br> 40-21-314 34 00 / 40-21-319 15 64 </p>
 	<br>
-	
-	
-	<div class="blabla">
-		<div id="map"></div>
-	
-	</div>
-	
-	
-	
-	<p><b><font size="4"> Stai în legătură cu noi </font></b></p>
-	
+		</div>
+	<h3> Stai în legătură cu noi </h3>
+	<div class="contact-container ui-corner-all">
+   
 	<p><a href="#" onclick="window.open('http://newsletter.gov.ro/', '_system');"><img class="resize" src="images/newsletter.png" style="width:30px;height:30px"</a><span class="title">Abonează-te la newsletter</span></a>
 	<br><br>
 	<a href="#" onclick="window.open('https://twitter.com/guv_ro', '_system');"><img class="resize" src="images/Twitter_Logo_Hd_Png_03.png" style="width:30px;height:30px"</a><span class="title">Twitter</span></a>
+	<br><br>
 	<a href="#" onclick="window.open('https://plus.google.com/+guvernulromaniei/posts', '_system');"><img class="resize" src="images/googleplus.png" style="width:30px;height:30px"</a><span class="title">Google+</span></a>
+	<br><br>
 	<a href="#" onclick="window.open('https://www.linkedin.com/company/guvernul-rom-niei', '_system');"><img class="resize" src="images/linkedin.png" style="width:30px;height:30px"</a><span class="title">LinkedIn</span></a>
-	<br>
+	<br><br>
 	
 	<a href="#" onclick="window.open('https://www.facebook.com/guv.ro', '_system');"><img class="resize" src="images/social_facebook_box_blue.png" style="width:30px;height:30px"</a><span class="title">Facebook</span></a>
+	<br><br>
 	<a href="#" onclick="window.open('https://www.youtube.com/user/guvernulromaniei', '_system');"><img class="resize" src="images/YouTube-icon.png" style="width:30px;height:30px"</a><span class="title">Youtube</span></a>
 	</p>
-	<br>
-	<table style="width:62%; font-size=7" >
-  <tr style="font-size:20px;">
-    <td width="40%"><b>Relaţii cu publicul</b></td>
-  </tr>
-  <tr style="font-size:13px">
-    <td width="40%"><i><b>Birou audienţe cetăţeni:</b><br>
+	</div>
+    <h3>Relaţii cu publicul</h3>
+  
+  <div class="contact-container ui-corner-all">
+    <i><p>Birou audienţe cetăţeni:</p><br>
 (accesul publicului se face dinspre strada Paris, pe la intrarea "C" a Palatului Victoria).</i><br><br>
 	<b><i>Program:</b></i><br>
 	Program:08:30-16:30 luni – vineri<br><br>
 
 	<b><i>Telefon:</b></i><br>
 	021 314 34 00 - interior 1006
+</div>
 
-</td></tr></table>
-
-<br>
-
-<table style="width:62%; font-size=7" >
-  <tr style="font-size:20px;">
+    <h3>Relaţii petiţii</h3>
+  <div class="contact-container ui-corner-all">
    
-    <td width="40%"><b>Relaţii petiţii</b></td> 
-   
-  </tr>
-  <tr style="font-size:13px">
-  
-
-    <td width="40%"><b><i>Telefon:</b></i><br>
+   <b><i>Telefon:</b></i><br>
 021 314 34 00 - interior 1903<br><br>
 
 <b><i>Fax:</b></i><br>
@@ -136,32 +105,31 @@ function initMap() {
 
 <b><i>Adresa de e-mail:</b></i><br>
 <a href="mailto:drp@gov.ro">drp@gov.ro</a>
+</div>
 
-</td> </tr></table>
-<br>
+  <h3>Registratură generală</h3>
+  <div class="contact-container ui-corner-all">
    
-
-<table style="width:62%; font-size=7" >
-  <tr style="font-size:20px;">
- 
-    <td width="40%"><b>Registratură generală</b></td>
-  </tr>
-  <tr style="font-size:13px">
-    <td width="40%"><b><i>Program:</b></i><br>
+    <b><i>Program:</b></i><br>
 08:00-18:30 Luni, miercuri, joi, vineri 08:00-19:00 Marţi<br><br>
 
 <b><i>Telefon:</b></i><br>
 021 314 34 00 - interior 1288
 
-</td>
-  </tr>
-</table>
-
+</div>	
+	<div class="map_wrapper">
+		<div id="map"></div>
+	
+	</div>
+	
 
 	</div>
 	
 	
 	
+	<div data-role="footer" data-position="fixed">
+		
+	</div><!-- /footer -->
 
 <div data-role="panel" id="meniu" data-theme="b" data-display="overlay" >
 		<form name="" action="http://gov.ro/ro/cauta" method="get" id="searchSiteForm">

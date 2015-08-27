@@ -2,23 +2,49 @@
   background-color: #E6EDF4;
  }
 
+ .main-contact h2, .main-contact h3 {
+    padding: 0 20px;
+    text-align: left;
+    font-size: 1.2em;
+    color: #2f598c;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+ }
 
+ .main-content p {
+    font-size: 1em;
+    line-height: 130%;
+ }
+
+.contact-container {
+  box-shadow: 1px 1px 2px #888888;
+  background-color: #ffffff;
+  margin-bottom: 20px !important;
+  padding: 15px 20px;
+}
 
 .ui-collapsible-heading-toggle {
   padding: 0;
   overflow: hidden;
 }
 
-.blabla{
-	width:350px;
+.map_wrapper{
+	width: 100%;
 	height:350px;
 }
-	
+
+#map {
+  width: 100%;
+  height: 350px;
+
+
+}
 
 .resize{
 	position:relative; width:50px;height:50px;vertical-align:middle;
 	margin-left:5px; 
-margin-right:10px
+  margin-right:10px
 	}
 .resize span.title { 
 position:relative; top:0; left:50px; width:50px; 	
