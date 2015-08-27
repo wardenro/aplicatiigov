@@ -24,15 +24,6 @@
 	<script src="js/global.js"></script>
 	<script src="js/date.js"></script>
 	<script src="js/index.js"></script>
-	<script>
-		$(document).ready(function(){
-		    $('#searchSiteForm').on('submit', function(e){
-		        e.preventDefault();
-		        var link = 'http://gov.ro/ro/cauta?cuvant=' + $('#topSearchInput').val().split(' ').join('+')
-		        window.open(link, '_system');
-		    });
-		});
-	</script>
 </head>
 <body>
 
@@ -56,18 +47,10 @@
 	<div data-role="panel" id="meniu" data-theme="b" data-display="overlay" >
 	
 	<form name="" action="http://gov.ro/ro/cauta" method="get" id="searchSiteForm">
-					<div class="searchTopLabel">
-						<label for="topSearchInput">Caută în site</label>
-					</div>	
-					<div class="searchTopItem">
-						<input id="topSearchInput" type="text" name="cuvant" class="searchInput" value="" placeholder="">
-					</div>	
-					<!--<div class="searchTopItem">
-						<input type="submit" class="searchSubmit" value="Caută">
-					</div>-->
-				</form>
-	
-	
+		<div class="searchTopItem">
+			<input id="topSearchInput" type="text" name="cuvant" class="searchInput" value="" placeholder="">
+		</div>
+	</form>		
 	
 		<a href="index.html" data-ajax="false" class="ui-btn ui-corner-all ">Agendă</a>
 		<a href="ministri.html" data-ajax="false"  class="ui-btn ui-corner-all">Cabinet Miniștri</a>
@@ -75,8 +58,8 @@
 		<a href="stiri.html" data-ajax="false" class="ui-btn ui-corner-all">Știri</a>
 		<a href="institutii.html" data-ajax="false" class="ui-btn ui-corner-all">Instituții</a>
 		<a href="video.html" data-ajax="false" class="ui-btn">Video</a>
-		<a href="social.html" data-ajax="false" class="ui-btn">Social Media</a>
-		<a href="termeni si conditii.html" data-ajax="false"  class="ui-btn ui-corner-all">Termeni și condiții</a>
+		<a href="contact.html" data-ajax="false" class="ui-btn">Contact</a>
+		<a href="termeni_si_conditii.html" data-ajax="false"  class="ui-btn ui-corner-all">Termeni și condiții</a>
 		<a href="Despre.html" data-ajax="false" class="ui-btn ui-corner-all">Despre</a>
 	</div><!-- /panel -->
 	

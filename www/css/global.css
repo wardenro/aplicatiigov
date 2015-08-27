@@ -98,39 +98,16 @@ a, a:focus, a:active {
   	color: #333 !important;
  }
 
- .icon-twitter {
- 	background: url('../images/icon_twitter.png');
- 	background-size: 30px;
-    background-repeat: no-repeat;
+ .searchInput {
+ 	background: url('../images/search.png') !important;
+ 	background-size: 35px !important;
+    background-repeat: no-repeat !important;
     background-position: 20px;
+    background-color: #fff !important;
  }
 
- .icon-facebook {
- 	background: url('../images/icon_facebook.png');
- 	background-size: 30px;
-    background-repeat: no-repeat;
-    background-position: 20px;
- }
-
- .icon-youtube {
- 	background: url('../images/icon_youtube.png');
- 	background-size: 30px;
-    background-repeat: no-repeat;
-    background-position: 20px;
- }
-
- .icon-linkedin {
- 	background: url('../images/icon_linkedin.png');
- 	background-size: 30px;
-    background-repeat: no-repeat;
-    background-position: 20px;
- }
-
- .icon-google {
- 	background: url('../images/icon_google.png');
- 	background-size: 30px;
-    background-repeat: no-repeat;
-    background-position: 20px;
+ .searchTopItem div {
+ 	border-color: #003A72 !important;
  }
 
  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {

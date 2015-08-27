@@ -35,3 +35,12 @@ function decodeEntities(input) {
 	y.innerHTML = input;
 	return y.value;		
 }	
+
+//  Search bar logic
+$(document).ready(function(){
+    $('#searchSiteForm').on('submit', function(e){
+        e.preventDefault();
+        var link = 'http://gov.ro/ro/cauta?cuvant=' + $('#topSearchInput').val().split(' ').join('+')
+        window.open(link, '_system');
+    });
+});
