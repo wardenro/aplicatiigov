@@ -109,6 +109,9 @@ a, a:focus, a:active {
  .searchTopItem div {
  	border-color: #003A72 !important;
  }
+.ui-header .ui-title, .ui-footer .ui-title {
+	overflow: visible;
+}
 
  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
     .image_wrapper {
