@@ -44,7 +44,7 @@ $(document).ready(function(){
         window.open(link, '_system');
     });
 
-    $('.ui-header').on('click', function(){
+    $('.ui-title').on('click', function(){
     	$("html, body").animate({
         	scrollTop: 0
     	}, 500);  
