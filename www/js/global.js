@@ -43,4 +43,10 @@ $(document).ready(function(){
         var link = 'http://gov.ro/ro/cauta?cuvant=' + $('#topSearchInput').val().split(' ').join('+')
         window.open(link, '_system');
     });
+
+    $('.ui-header').on('click', function(){
+    	$("html, body").animate({
+        	scrollTop: 0
+    	}, 500);  
+    })
 });

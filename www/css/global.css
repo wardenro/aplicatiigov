@@ -104,6 +104,10 @@ a, a:focus, a:active {
     background-repeat: no-repeat !important;
     background-position: 20px;
     background-color: #fff !important;
+    color: black !important;
+    padding-left: 35px !important;
+    text-align: left !important;
+    font-weight: normal !important;
  }
 
  .searchTopItem div {
