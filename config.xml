@@ -12,7 +12,7 @@ Informații suplimentare privind activitatea Guvernului sunt disponibile online 
   <gap:config-file platform="ios" parent="UIViewControllerBasedStatusBarAppearance" overwrite="true">
     <false/>
   </gap:config-file>
-  <author href="http://phonegap.com" email="support@phonegap.com">PhoneGap Team</author>
+  <author href="http://www.gov.ro" email="iulia@ionita.me">Secretariatul General al Guvernului</author>
   <content src="index.html"/>
   <preference name="permissions" value="none"/>
   <preference name="orientation" value="default"/>
@@ -48,13 +48,14 @@ Informații suplimentare privind activitatea Guvernului sunt disponibile online 
   <gap:plugin name="org.apache.cordova.splashscreen"/>
   <gap:plugin name="org.apache.cordova.vibration"/>
   <gap:plugin name="nl.x-services.plugins.socialsharing" source="plugins.cordova.io" />
-  <icon src="icon.png" />
-  <icon src="res/icon/android/android-chrome-36x36.png" width="36" height="36" gap:platform="android" />
-  <icon src="res/icon/android/android-chrome-48x48.png" width="48" height="48" gap:platform="android" />
-  <icon src="res/icon/android/android-chrome-72x72.png" width="72" height="72" gap:platform="android" />
-  <icon src="res/icon/android/android-chrome-96x96.png" width="96" height="96" gap:platform="android" />
-  <icon src="res/icon/android/android-chrome-144x144.png" width="144" height="144" gap:platform="android" />
-  <icon src="res/icon/android/android-chrome-192x192.png" width="192" height="192" gap:platform="android" />
+  <platform name="android">
+    <icon src="res/icon/android/android-chrome-36x36.png" width="36" height="36" gap:platform="android" />
+    <icon src="res/icon/android/android-chrome-48x48.png" width="48" height="48" gap:platform="android" />
+    <icon src="res/icon/android/android-chrome-72x72.png" width="72" height="72" gap:platform="android" />
+    <icon src="res/icon/android/android-chrome-96x96.png" width="96" height="96" gap:platform="android" />
+    <icon src="res/icon/android/android-chrome-144x144.png" width="144" height="144" gap:platform="android" />
+    <icon src="res/icon/android/android-chrome-192x192.png" width="192" height="192" gap:platform="android" />
+  </platform>  
   <icon src="res/icon/ios/apple-touch-icon-57x57.png" gap:platform="ios" width="57" height="57" />
   <icon src="res/icon/ios/apple-touch-icon-60x60.png" gap:platform="ios" width="60" height="60" />
   <icon src="res/icon/ios/apple-touch-icon-72x72.png" gap:platform="ios" width="72" height="72" />
