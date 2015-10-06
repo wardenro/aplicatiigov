@@ -72,9 +72,9 @@ Informații suplimentare privind activitatea Guvernului sunt disponibile online 
     <gap:plugin name="org.apache.cordova.splashscreen" source="npm" />
     <gap:plugin name="org.apache.cordova.vibration" source="npm" />-->
     <gap:plugin name="org.apache.cordova.inappbrowser" source="npm" />
-     <gap:plugin name="org.apache.cordova.file-transfer" source="npm" />
+     <!--<gap:plugin name="org.apache.cordova.file-transfer" source="npm" />
       <gap:plugin name="org.apache.cordova.splashscreen" source="npm" />
-        <gap:plugin name="org.apache.cordova.file" source="npm" />
+        <gap:plugin name="org.apache.cordova.file" source="npm" />-->
 
     <!-- Third party plugins -->
     <!-- A list of available plugins are available at https://build.phonegap.com/plugins -->
