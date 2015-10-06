@@ -13,7 +13,8 @@ Informații suplimentare privind activitatea Guvernului sunt disponibile online 
   <gap:config-file platform="ios" parent="UIViewControllerBasedStatusBarAppearance" overwrite="true">
     <false/>
   </gap:config-file>
-  <author href="http://www.gov.ro" email="iulia@ionita.me">Secretariatul General al Guvernului</author>
+  <author href="http://www.gov.ro" email="victor.ciobanu@gov.ro">Secretariatul General al Guvernului</author>
+  <preference name="phonegap-version"       value="3.7.0" />
   <content src="index.html"/>
   <preference name="permissions" value="none"/>
   <preference name="orientation" value="default"/>
