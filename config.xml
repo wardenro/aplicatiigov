@@ -52,7 +52,7 @@ Informații suplimentare privind activitatea Guvernului sunt disponibile online 
 
     <!-- Plugins -->
 
-    <!-- Core plugins 
+    <!-- Core plugins -->
     <gap:plugin name="org.apache.cordova.battery-status" source="npm" />
     <gap:plugin name="org.apache.cordova.camera" source="npm" />
     <gap:plugin name="org.apache.cordova.media-capture" source="npm" />
@@ -70,11 +70,8 @@ Informații suplimentare privind activitatea Guvernului sunt disponibile online 
     <gap:plugin name="org.apache.cordova.media" source="npm" />
     <gap:plugin name="org.apache.cordova.network-information" source="npm" />
     <gap:plugin name="org.apache.cordova.splashscreen" source="npm" />
-    <gap:plugin name="org.apache.cordova.vibration" source="npm" />-->
-    <gap:plugin name="org.apache.cordova.inappbrowser" source="npm" />
-     <!--<gap:plugin name="org.apache.cordova.file-transfer" source="npm" />
-      <gap:plugin name="org.apache.cordova.splashscreen" source="npm" />
-        <gap:plugin name="org.apache.cordova.file" source="npm" />-->
+    <gap:plugin name="org.apache.cordova.vibration" source="npm" />
+   
 
     <!-- Third party plugins -->
     <!-- A list of available plugins are available at https://build.phonegap.com/plugins -->
