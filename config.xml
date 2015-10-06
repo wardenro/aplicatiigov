@@ -5,9 +5,8 @@
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "ro.gov.GuvernulRomaniei"
         version   = "2.0.0">
-        
-<manifest android:hardwareAccelerated="true" android:versionCode="5" android:versionName="1.4" android:windowSoftInputMode="adjustPan" package="ro.gov.govro" xmlns:android="http://schemas.android.com/apk/res/android">
-        
+
+
     <name>Guvernul României</name>
 
     <description>
