@@ -5,7 +5,9 @@
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "ro.gov.GuvernulRomaniei"
         version   = "2.0.0">
-
+        
+<manifest android:hardwareAccelerated="true" android:versionCode="5" android:versionName="1.4" android:windowSoftInputMode="adjustPan" package="ro.gov.govro" xmlns:android="http://schemas.android.com/apk/res/android">
+        
     <name>Guvernul României</name>
 
     <description>
@@ -45,7 +47,7 @@ Informații suplimentare privind activitatea Guvernului sunt disponibile online 
     <preference name="android-installLocation"    value="auto" />           <!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard. -->
     <!--
         Define a specific version of PhoneGap to build into your app.
-        <preference name="phonegap-version"       value="3.5.0" />
+        <preference name="phonegap-version"       value="5.2.0" />
     -->
 
     <!-- Plugins -->
