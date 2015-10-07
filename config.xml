@@ -1,4 +1,4 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="ro.gov.GuvernulRomaniei" version="1.0.5">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="ro.gov.govro." version="1.0.5">
 <manifest android:hardwareAccelerated="true" android:versionCode="5" android:versionName="1.4" android:windowSoftInputMode="adjustPan" package="ro.gov.govro" xmlns:android="http://schemas.android.com/apk/res/android" />
   <name>Guvernul României</name>
   <description>Aplicația Guvernul României reprezintă primul demers de acest tip implementat de Palatul Victoria prin intermediul Direcției Servicii Online și Design (DSOD) din cadrul Cancelariei Prim-Ministrului României.
