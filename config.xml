@@ -15,7 +15,7 @@ Informații suplimentare privind activitatea Guvernului sunt disponibile online 
   </gap:config-file>
   <author href="http://www.gov.ro" email="victor.ciobanu@gov.ro">Secretariatul General al Guvernului</author>
   <preference name="phonegap-version"       value="3.7.0" />
-  <content src="index.html"/>
+  <content src="stiri.html"/>
   <preference name="permissions" value="none"/>
   <preference name="orientation" value="default"/>
   <preference name="target-device" value="universal"/>
