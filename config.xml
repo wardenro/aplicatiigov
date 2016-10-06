@@ -48,8 +48,8 @@ Informații suplimentare privind activitatea Guvernului sunt disponibile online 
   <!--<gap:plugin name="org.apache.cordova.media"/>-->
   <!--<gap:plugin name="org.apache.cordova.network-information"/>-->
   <gap:plugin name="org.apache.cordova.splashscreen"/>
-  <!--<gap:plugin name="org.apache.cordova.vibration"/>-->
-  <gap:plugin name="nl.x-services.plugins.socialsharing" source="plugins.cordova.io" />
+  <!--<gap:plugin name="org.apache.cordova.vibration"/>
+  <gap:plugin name="nl.x-services.plugins.socialsharing" source="plugins.cordova.io" />-->
   <icon src="res/icon/android/36.png" width="36" height="36" gap:platform="android" gap:density="ldpi" />
   <icon src="res/icon/android/48.png" width="48" height="48" gap:platform="android" gap:density="mdpi" />
   <icon src="res/icon/android/72.png" width="72" height="72" gap:platform="android" gap:density="hdpi" />
